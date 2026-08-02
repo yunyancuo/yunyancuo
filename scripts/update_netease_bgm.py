@@ -11,6 +11,7 @@ COOKIE = os.environ.get("NETEASE_COOKIE", "").strip()
 API_BASE = os.environ.get("NETEASE_API_BASE", "https://music.163.com").rstrip("/")
 README = "README.md"
 ERROR_LOG = "bgm-error.log"
+PLAYER_DATA = "player-data.json"
 
 
 def cookie_value(name):
@@ -69,6 +70,12 @@ def main():
     artists = "、".join(artist.get("name", "未知歌手") for artist in song.get("ar", []))
     song_url = f"https://music.163.com/#/song?id={song['id']}"
     cover_url = (song.get("al") or {}).get("picUrl", "").replace("http://", "https://")
+    audio_url = ""
+    try:
+        audio = request_json(f"/song/url?id={song['id']}&br=320000").get("data", [])
+        audio_url = (audio[0] or {}).get("url", "") if audio else ""
+    except Exception:
+        pass
     title = html.escape(song.get("name", "未知歌曲"))
     safe_artists = html.escape(artists)
     if cover_url:
@@ -94,6 +101,19 @@ def main():
         raise RuntimeError("README.md 中找不到唯一的 NETEASE_BGM 标记。")
     with open(README, "w", encoding="utf-8", newline="\n") as file:
         file.write(updated)
+    with open(PLAYER_DATA, "w", encoding="utf-8", newline="\n") as file:
+        json.dump(
+            {
+                "title": song.get("name", "未知歌曲"),
+                "artist": artists,
+                "url": song_url,
+                "coverUrl": cover_url,
+                "audioUrl": audio_url,
+            },
+            file,
+            ensure_ascii=False,
+            indent=2,
+        )
     print(f"已更新 BGM: {song.get('name', '未知歌曲')} - {artists}")
 
 
