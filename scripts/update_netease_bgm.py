@@ -48,7 +48,8 @@ def main():
     if not COOKIE:
         raise RuntimeError("缺少 NETEASE_COOKIE。请在 GitHub 仓库 Settings > Secrets and variables > Actions 中添加它。")
 
-    playlists = request_json(f"/api/user/playlist?uid={UID}&limit=1000&offset=0").get("playlist", [])
+    playlist_path = "/api/user/playlist" if API_BASE == "https://music.163.com" else "/user/playlist"
+    playlists = request_json(f"{playlist_path}?uid={UID}&limit=1000&offset=0").get("playlist", [])
     liked = next((item for item in playlists if "喜欢的音乐" in item.get("name", "")), None)
     if not liked:
         raise RuntimeError(f"找不到用户 {UID} 的“喜欢的音乐”歌单，请确认 UID 和 Cookie 属于同一个账号。")
