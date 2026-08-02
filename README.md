@@ -4,7 +4,7 @@
 
 ### 「今天也要元气满满地写代码、弹吉他！」
 
-<img src="https://readme-typing-svg.demolab.com?font=Comic+Sans+MS&size=24&duration=3000&pause=1000&color=FF5C8A&center=true&vCenter=true&width=650&lines=Welcome+to+my+little+Live+House!;代码、音乐和一点点魔法;保持闪耀，保持热爱！" alt="动态文字" />
+<img src="./assets/typing.svg" alt="动态文字" />
 
 🌸 Python · AI · AstrBot · 自动化  
 🎵 喜欢音乐、二次元和把想法做成项目  
@@ -45,8 +45,8 @@
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=yunyancuo&show_icons=true&theme=rose_pine&hide_border=true&locale=cn" alt="GitHub 统计" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yunyancuo&layout=compact&theme=rose_pine&hide_border=true&locale=cn" alt="常用语言" />
+<img height="165" src="./assets/github-stats.svg" alt="GitHub 统计" />
+<img height="165" src="./assets/top-languages.svg" alt="常用语言" />
 
 </div>
 
@@ -60,7 +60,7 @@
 
 <div align="center">
 
-![访问量](https://komarev.com/ghpvc/?username=yunyancuo&color=ff5c8a&style=flat-square&label=访客数)
+![Profile views](https://komarev.com/ghpvc/?username=yunyancuo&label=Profile%20views&color=ff5c8a&style=flat-square)
 
 <br><br>
 

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="650" height="52" viewBox="0 0 650 52">
+  <style>
+    .line { font: 24px sans-serif; fill: #ff5c8a; }
+    .cursor { fill: #ff5c8a; }
+  </style>
+  <text x="325" y="32" text-anchor="middle" class="line">
+    <tspan>Welcome to my little Live House!</tspan>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="12s" repeatCount="indefinite" />
+  </text>
+  <text x="325" y="32" text-anchor="middle" class="line" opacity="0">
+    <tspan>Code, music, and a little magic</tspan>
+    <animate attributeName="opacity" values="0;0;1;1;0" dur="12s" repeatCount="indefinite" />
+  </text>
+  <text x="325" y="32" text-anchor="middle" class="line" opacity="0">
+    <tspan>Stay bright, stay passionate!</tspan>
+    <animate attributeName="opacity" values="0;1;1;0;0" dur="12s" repeatCount="indefinite" />
+  </text>
+</svg>
