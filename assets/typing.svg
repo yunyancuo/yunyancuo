@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="170" viewBox="0 0 760 170" role="img" aria-labelledby="title description">
-  <title id="title">Four chibi pixel musicians</title>
-  <desc id="description">Four small pixel musicians with blue, blonde, pink, and red hair below a quiet thought.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="180" viewBox="0 0 900 180" role="img" aria-labelledby="title description">
+  <title id="title">A quiet motto and four chibi pixel musicians</title>
+  <desc id="description">A slowly revealed motto on the left and four small pixel musicians on the right.</desc>
   <defs>
     <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#a4133c" />
@@ -142,11 +142,20 @@
     </g>
   </defs>
 
-  <rect width="760" height="170" fill="url(#dots)" opacity="0.35" />
-  <text x="380" y="20" fill="url(#red)" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="18" text-anchor="middle">不必耀眼，先勇敢地发出自己的声音。</text>
-  <path d="M75 33H685" stroke="#d7264f" stroke-opacity="0.14" />
-  <use href="#blue-girl" x="10" y="0" />
-  <use href="#blonde-girl" x="195" y="0" />
-  <use href="#pink-girl" x="380" y="0" />
-  <use href="#red-girl" x="565" y="0" />
+  <rect width="900" height="180" fill="url(#dots)" opacity="0.35" />
+  <path d="M46 28H535M46 153H535" stroke="#d7264f" stroke-opacity="0.16" />
+  <path d="M558 28V153" stroke="#d7264f" stroke-opacity="0.2" />
+  <text x="68" y="57" fill="#a13b57" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="11" letter-spacing="2">A NOTE TO SELF</text>
+  <clipPath id="motto-reveal">
+    <rect x="58" y="68" width="470" height="42">
+      <animate attributeName="width" from="0" to="470" dur="5s" begin="0.6s" fill="freeze" />
+    </rect>
+  </clipPath>
+  <text x="68" y="96" fill="url(#red)" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="22" clip-path="url(#motto-reveal)">不必耀眼，先勇敢地发出自己的声音。</text>
+  <text x="68" y="128" fill="#9e6a78" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.5">CODE / MUSIC / KEEP GOING</text>
+
+  <use href="#blue-girl" transform="translate(580 38) scale(.62)" />
+  <use href="#blonde-girl" transform="translate(648 38) scale(.62)" />
+  <use href="#pink-girl" transform="translate(716 38) scale(.62)" />
+  <use href="#red-girl" transform="translate(784 38) scale(.62)" />
 </svg>
