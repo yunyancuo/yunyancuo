@@ -1,18 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="650" height="52" viewBox="0 0 650 52">
-  <style>
-    .line { font: 24px sans-serif; fill: #ff5c8a; }
-    .cursor { fill: #ff5c8a; }
-  </style>
-  <text x="325" y="32" text-anchor="middle" class="line">
-    <tspan>Welcome to my little Live House!</tspan>
-    <animate attributeName="opacity" values="1;1;0;0;1" dur="12s" repeatCount="indefinite" />
-  </text>
-  <text x="325" y="32" text-anchor="middle" class="line" opacity="0">
-    <tspan>Code, music, and a little magic</tspan>
-    <animate attributeName="opacity" values="0;0;1;1;0" dur="12s" repeatCount="indefinite" />
-  </text>
-  <text x="325" y="32" text-anchor="middle" class="line" opacity="0">
-    <tspan>Stay bright, stay passionate!</tspan>
-    <animate attributeName="opacity" values="0;1;1;0;0" dur="12s" repeatCount="indefinite" />
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="76" viewBox="0 0 720 76" role="img" aria-labelledby="title description">
+  <title id="title">Yunyancuo's creative coding manifesto</title>
+  <desc id="description">A rotating message about building useful things with code, curiosity, and music.</desc>
+  <defs>
+    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff315d" />
+      <stop offset="0.5" stop-color="#ff6b6b" />
+      <stop offset="1" stop-color="#ffb199" />
+    </linearGradient>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
+      <path d="M0 0H18M0 0V18" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.18" />
+    </pattern>
+    <filter id="softGlow" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1" y="1" width="718" height="74" rx="18" fill="#171525" stroke="#3c3158" stroke-width="2" />
+  <rect x="1" y="1" width="718" height="74" rx="18" fill="url(#grid)" />
+  <text x="28" y="19" fill="#a89bc7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="8" letter-spacing="1.8">FIELD NOTES / CREATIVE SYSTEM</text>
+  <text x="692" y="19" text-anchor="end" fill="#a89bc7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="8" letter-spacing="1.8">04 / 00</text>
+  <circle cx="34" cy="38" r="8" fill="url(#aurora)" filter="url(#softGlow)" />
+  <path d="M54 38h42" stroke="url(#aurora)" stroke-width="2" stroke-linecap="round" />
+  <path d="M624 38h42" stroke="url(#aurora)" stroke-width="2" stroke-linecap="round" />
+  <circle cx="686" cy="38" r="3" fill="#ff8a8a"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite" /></circle>
+
+  <!-- Each message owns a separate slot. The fade-out finishes before the next fade-in starts. -->
+  <g font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="url(#aurora)" filter="url(#softGlow)">
+    <text x="360" y="46"><tspan>把想法写成代码，把代码变成光</tspan><animate attributeName="opacity" values="1;1;1;0;0;0;1" keyTimes="0;.18;.20;.24;.74;.99;1" dur="16s" repeatCount="indefinite" /></text>
+    <text x="360" y="46" opacity="0"><tspan>AI 不是答案，而是探索答案的放大器</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.22;.24;.43;.45;.49;1" dur="16s" repeatCount="indefinite" /></text>
+    <text x="360" y="46" opacity="0"><tspan>在音乐与模型之间，给好奇心留一点回响</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.47;.49;.70;.72;.76;1" dur="16s" repeatCount="indefinite" /></text>
+    <text x="360" y="46" opacity="0"><tspan>持续迭代，不只修复 Bug，也修复生活</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.72;.74;.94;.96;.99;1" dur="16s" repeatCount="indefinite" /></text>
+  </g>
+  <text x="360" y="65" text-anchor="middle" fill="#82779f" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="8" letter-spacing="1.6">PYTHON  /  AI  /  AUTOMATION  /  MUSIC</text>
 </svg>

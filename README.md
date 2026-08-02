@@ -2,13 +2,13 @@
 
 # 🎸 yunyancuo
 
-### 「为生活code！」
+### 「为生活 code！」
 
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/typing.svg" alt="动态文字" />
 
 🌸 Python · AI · AstrBot · 自动化
-🎵 喜欢音乐、二次元和把想法做成项目
-🎤 开朗派开发者
+🎵 用音乐保持灵感，用代码把想法落地
+🎤 在好奇心和实践之间持续迭代
 
 </div>
 
@@ -19,8 +19,8 @@
 ```text
 性格：元气、热情、喜欢交朋友
 日常：写代码 / 听歌 / 研究 AI
-状态：修修修修 Bug
-目标：万一有人Star呢
+状态：把 Bug 变成下一次理解
+目标：做有用、有趣、值得留下的东西
 ```
 
 > 「有目的的人才会迷路，我只是来人间散步。」
