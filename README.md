@@ -63,6 +63,10 @@
 <a href="https://music.163.com/#/song?id=3414488371"><img src="https://p4.music.126.net/8vkWFMdRU12EZnhqUkVlMw==/109951173671668840.jpg" width="160" alt="The Gentlemen(绅士们) (Live) 封面"></a><br>🎵 <strong>The Gentlemen(绅士们) (Live)</strong> · 弹壳Danko、Vinz-T<br><a href="https://music.163.com/#/song?id=3414488371">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
+<p align="center">
+  <a href="https://yunyancuo.github.io/netease-bgm-player/"><strong>🎧 打开我的 BGM 播放器</strong></a>
+</p>
+
 <div align="center">
 
 ![Profile views](https://komarev.com/ghpvc/?username=yunyancuo&label=Profile%20views&color=ff5c8a&style=flat-square)
