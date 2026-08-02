@@ -4,7 +4,7 @@
 
 ### 「为生活 code！」
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/14249af/assets/typing.svg" alt="动态文字" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="760" alt="像素乐队现场" />
 
 🌸 Python · AI · AstrBot · 自动化
 🎵 用音乐保持灵感，用代码把想法落地
