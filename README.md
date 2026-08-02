@@ -5,7 +5,7 @@
 ### 「为生活 code！」
 
 <p align="center">
-  <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/motto.svg" width="420" alt="座右铭：不必耀眼，先勇敢地发声" />
+      <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/motto.svg" width="480" alt="座右铭：不必耀眼，先勇敢地发声" />
   &nbsp;&nbsp;
   <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="300" alt="像素乐队现场" />
 </p>
