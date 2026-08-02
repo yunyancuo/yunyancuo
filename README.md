@@ -57,7 +57,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-🎵 网易云登录 Cookie 配置后，这里会自动更新为你最近喜欢的歌曲。
+🎵 [**The Gentlemen(绅士们) (Live)**](https://music.163.com/#/song?id=3414488371) · 弹壳Danko、Vinz-T
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
