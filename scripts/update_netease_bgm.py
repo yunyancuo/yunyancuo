@@ -74,6 +74,7 @@ def main():
     try:
         audio = request_json(f"/song/url?id={song['id']}&br=320000").get("data", [])
         audio_url = (audio[0] or {}).get("url", "") if audio else ""
+        audio_url = audio_url.replace("http://", "https://")
     except Exception:
         pass
     title = html.escape(song.get("name", "未知歌曲"))
