@@ -7,6 +7,7 @@ import urllib.request
 
 UID = os.environ.get("NETEASE_UID", "1591928592")
 COOKIE = os.environ.get("NETEASE_COOKIE", "").strip()
+API_BASE = os.environ.get("NETEASE_API_BASE", "https://music.163.com").rstrip("/")
 README = "README.md"
 ERROR_LOG = "bgm-error.log"
 
@@ -21,12 +22,15 @@ def cookie_value(name):
 
 
 def request_json(path):
+    if API_BASE != "https://music.163.com":
+        separator = "&" if "?" in path else "?"
+        path = f"{path}{separator}cookie={urllib.parse.quote(COOKIE)}"
     csrf = cookie_value("__csrf")
-    if csrf:
+    if csrf and API_BASE == "https://music.163.com":
         separator = "&" if "?" in path else "?"
         path = f"{path}{separator}csrf_token={urllib.parse.quote(csrf)}"
     request = urllib.request.Request(
-        f"https://music.163.com{path}",
+        f"{API_BASE}{path}",
         headers={
             "Cookie": COOKIE,
             "User-Agent": "Mozilla/5.0 GitHub Actions",
@@ -49,8 +53,13 @@ def main():
     if not liked:
         raise RuntimeError(f"找不到用户 {UID} 的“喜欢的音乐”歌单，请确认 UID 和 Cookie 属于同一个账号。")
 
-    detail = request_json(f"/api/playlist/detail?id={liked['id']}&s=0")
-    tracks = (detail.get("playlist") or {}).get("tracks", [])
+    if API_BASE == "https://music.163.com":
+        detail = request_json(f"/api/playlist/detail?id={liked['id']}&s=0")
+        tracks = (detail.get("playlist") or {}).get("tracks", [])
+    else:
+        tracks = request_json(
+            f"/playlist/track/all?id={liked['id']}&limit=1&offset=0"
+        ).get("songs", [])
     if not tracks:
         raise RuntimeError("“喜欢的音乐”歌单为空，或网易云没有返回歌曲数据。")
 

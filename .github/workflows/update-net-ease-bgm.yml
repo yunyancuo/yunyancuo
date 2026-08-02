@@ -17,11 +17,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
+      - name: Start NetEase API wrapper
+        run: |
+          nohup npx --yes NeteaseCloudMusicApi@4.32.0 > /tmp/netease-api.log 2>&1 &
+          for attempt in {1..30}; do
+            curl --fail --silent http://127.0.0.1:3000/ >/dev/null && exit 0
+            sleep 2
+          done
+          cat /tmp/netease-api.log
+          exit 1
       - name: Fetch latest liked song
         id: update
         env:
           NETEASE_UID: "1591928592"
           NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
+          NETEASE_API_BASE: "http://127.0.0.1:3000"
         run: python scripts/update_netease_bgm.py
       - name: Commit README update
         if: success()
