@@ -4,7 +4,7 @@
 
 ### 「今天也要元气满满地写代码、弹吉他！」
 
-<img src="./assets/typing.svg" alt="动态文字" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/typing.svg" alt="动态文字" />
 
 🌸 Python · AI · AstrBot · 自动化  
 🎵 喜欢音乐、二次元和把想法做成项目  
@@ -45,8 +45,8 @@
 
 <div align="center">
 
-<img height="165" src="./assets/github-stats.svg" alt="GitHub 统计" />
-<img height="165" src="./assets/top-languages.svg" alt="常用语言" />
+<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-stats.svg" alt="GitHub 统计" />
+<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/top-languages.svg" alt="常用语言" />
 
 </div>
 
