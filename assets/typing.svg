@@ -1,37 +1,57 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="76" viewBox="0 0 720 76" role="img" aria-labelledby="title description">
-  <title id="title">Yunyancuo's creative coding manifesto</title>
-  <desc id="description">A rotating message about building useful things with code, curiosity, and music.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="64" viewBox="0 0 680 64" role="img" aria-labelledby="title description">
+  <title id="title">Yunyancuo's rotating coding notes</title>
+  <desc id="description">Short thoughts about code, AI, music, and making things that matter.</desc>
   <defs>
-    <linearGradient id="aurora" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ff315d" />
-      <stop offset="0.5" stop-color="#ff6b6b" />
-      <stop offset="1" stop-color="#ffb199" />
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c9184a" />
+      <stop offset="0.5" stop-color="#e63956" />
+      <stop offset="1" stop-color="#ff8c69" />
     </linearGradient>
-    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(15)">
-      <path d="M0 0H18M0 0V18" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-width="1" />
-      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.18" />
+    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#d7264f" fill-opacity="0.18" />
     </pattern>
-    <filter id="softGlow" x="-20%" y="-80%" width="140%" height="260%">
-      <feGaussianBlur stdDeviation="3" result="blur" />
-      <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-    </filter>
+    <g id="pixel-person" shape-rendering="crispEdges">
+      <!-- Tiny pink-haired guitarist, drawn on a 3px pixel grid. -->
+      <rect x="28" y="47" width="30" height="2" fill="#8f2946" opacity="0.35" />
+      <rect x="34" y="12" width="15" height="3" fill="#9f3158" />
+      <rect x="30" y="15" width="24" height="15" fill="#d94d77" />
+      <rect x="27" y="18" width="6" height="9" fill="#b93866" />
+      <rect x="50" y="17" width="7" height="12" fill="#b93866" />
+      <rect x="34" y="16" width="17" height="5" fill="#ff7297" />
+      <rect x="34" y="21" width="16" height="11" fill="#ffd0ba" />
+      <rect x="31" y="24" width="4" height="7" fill="#d94d77" />
+      <rect x="50" y="23" width="4" height="8" fill="#d94d77" />
+      <rect x="37" y="25" width="3" height="3" fill="#4c2038" />
+      <rect x="45" y="25" width="3" height="3" fill="#4c2038" />
+      <rect x="40" y="30" width="5" height="2" fill="#e88d87" />
+      <rect x="35" y="33" width="16" height="13" fill="#34405c" />
+      <rect x="38" y="33" width="10" height="4" fill="#f3e7df" />
+      <rect x="31" y="35" width="6" height="3" fill="#ffd0ba" />
+      <rect x="49" y="35" width="6" height="3" fill="#ffd0ba" />
+      <rect x="37" y="45" width="5" height="4" fill="#25263d" />
+      <rect x="46" y="45" width="5" height="4" fill="#25263d" />
+      <rect x="50" y="31" width="3" height="15" fill="#d58b54" />
+      <rect x="52" y="28" width="12" height="3" fill="#d58b54" />
+      <rect x="55" y="30" width="8" height="10" fill="#b94b5e" />
+      <rect x="58" y="33" width="3" height="3" fill="#ff9a83" />
+    </g>
   </defs>
 
-  <rect x="1" y="1" width="718" height="74" rx="18" fill="#171525" stroke="#3c3158" stroke-width="2" />
-  <rect x="1" y="1" width="718" height="74" rx="18" fill="url(#grid)" />
-  <text x="28" y="19" fill="#a89bc7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="8" letter-spacing="1.8">FIELD NOTES / CREATIVE SYSTEM</text>
-  <text x="692" y="19" text-anchor="end" fill="#a89bc7" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="8" letter-spacing="1.8">04 / 00</text>
-  <circle cx="34" cy="38" r="8" fill="url(#aurora)" filter="url(#softGlow)" />
-  <path d="M54 38h42" stroke="url(#aurora)" stroke-width="2" stroke-linecap="round" />
-  <path d="M624 38h42" stroke="url(#aurora)" stroke-width="2" stroke-linecap="round" />
-  <circle cx="686" cy="38" r="3" fill="#ff8a8a"><animate attributeName="opacity" values="1;.35;1" dur="2.4s" repeatCount="indefinite" /></circle>
+  <rect width="680" height="64" fill="url(#dots)" opacity="0.45" />
+  <path d="M92 51H588" fill="none" stroke="#d7264f" stroke-opacity="0.18" />
+  <path d="M92 51H224M456 51H588" fill="none" stroke="url(#red)" stroke-linecap="round" />
+  <circle cx="84" cy="51" r="3" fill="#d7264f" />
+  <circle cx="596" cy="51" r="3" fill="#ff8c69">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <use href="#pixel-person" />
+  <use href="#pixel-person" transform="translate(680 0) scale(-1 1)" opacity="0.82" />
 
-  <!-- Each message owns a separate slot. The fade-out finishes before the next fade-in starts. -->
-  <g font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="21" font-weight="600" text-anchor="middle" fill="url(#aurora)" filter="url(#softGlow)">
-    <text x="360" y="46"><tspan>把想法写成代码，把代码变成光</tspan><animate attributeName="opacity" values="1;1;1;0;0;0;1" keyTimes="0;.18;.20;.24;.74;.99;1" dur="16s" repeatCount="indefinite" /></text>
-    <text x="360" y="46" opacity="0"><tspan>AI 不是答案，而是探索答案的放大器</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.22;.24;.43;.45;.49;1" dur="16s" repeatCount="indefinite" /></text>
-    <text x="360" y="46" opacity="0"><tspan>在音乐与模型之间，给好奇心留一点回响</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.47;.49;.70;.72;.76;1" dur="16s" repeatCount="indefinite" /></text>
-    <text x="360" y="46" opacity="0"><tspan>持续迭代，不只修复 Bug，也修复生活</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.72;.74;.94;.96;.99;1" dur="16s" repeatCount="indefinite" /></text>
+  <!-- Each sentence has its own non-overlapping slot on the shared timeline. -->
+  <g fill="url(#red)" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" text-anchor="middle">
+    <text x="340" y="36"><tspan>把想法写成代码，把代码变成光</tspan><animate attributeName="opacity" values="1;1;1;0;0;0;1" keyTimes="0;.18;.20;.24;.74;.99;1" dur="16s" repeatCount="indefinite" /></text>
+    <text x="340" y="36" opacity="0"><tspan>AI 不是答案，而是探索答案的放大器</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.22;.24;.43;.45;.49;1" dur="16s" repeatCount="indefinite" /></text>
+    <text x="340" y="36" opacity="0"><tspan>在音乐与模型之间，给好奇心留一点回响</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.47;.49;.70;.72;.76;1" dur="16s" repeatCount="indefinite" /></text>
+    <text x="340" y="36" opacity="0"><tspan>持续迭代，不只修复 Bug，也修复生活</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.72;.74;.94;.96;.99;1" dur="16s" repeatCount="indefinite" /></text>
   </g>
-  <text x="360" y="65" text-anchor="middle" fill="#82779f" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="8" letter-spacing="1.6">PYTHON  /  AI  /  AUTOMATION  /  MUSIC</text>
 </svg>
