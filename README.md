@@ -27,12 +27,15 @@
 
 ## 🎀 我的项目
 
+<!-- PROJECTS:START -->
 | 项目 | 简介 |
 | --- | --- |
-| [🌊 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 |
-| [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | 深度学习笔记 |
-| [🤖 AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent 与多平台机器人框架 |
-| [📖 HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭电图书馆预约脚本 |
+| [✨ netease-bgm-player](https://github.com/yunyancuo/netease-bgm-player) | A cute NetEase Cloud Music BGM player |
+| [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ |
+| [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 |
+| [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 \|\| 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 |
+| [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | notes-for-deep-learniung |
+<!-- PROJECTS:END -->
 
 ## 🌈 技术栈
 
