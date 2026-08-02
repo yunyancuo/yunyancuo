@@ -1,57 +1,111 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="680" height="64" viewBox="0 0 680 64" role="img" aria-labelledby="title description">
-  <title id="title">Yunyancuo's rotating coding notes</title>
-  <desc id="description">Short thoughts about code, AI, music, and making things that matter.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="108" viewBox="0 0 760 108" role="img" aria-labelledby="title description">
+  <title id="title">Four pixel musicians and a quiet thought</title>
+  <desc id="description">Four small pixel characters inspired by a rock band, surrounding a reflective sentence.</desc>
   <defs>
     <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#c9184a" />
+      <stop offset="0" stop-color="#b51743" />
       <stop offset="0.5" stop-color="#e63956" />
-      <stop offset="1" stop-color="#ff8c69" />
+      <stop offset="1" stop-color="#ff936f" />
     </linearGradient>
-    <pattern id="dots" width="16" height="16" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.8" fill="#d7264f" fill-opacity="0.18" />
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#d7264f" fill-opacity="0.12" />
     </pattern>
-    <g id="pixel-person" shape-rendering="crispEdges">
-      <!-- Tiny pink-haired guitarist, drawn on a 3px pixel grid. -->
-      <rect x="28" y="47" width="30" height="2" fill="#8f2946" opacity="0.35" />
-      <rect x="34" y="12" width="15" height="3" fill="#9f3158" />
-      <rect x="30" y="15" width="24" height="15" fill="#d94d77" />
-      <rect x="27" y="18" width="6" height="9" fill="#b93866" />
-      <rect x="50" y="17" width="7" height="12" fill="#b93866" />
-      <rect x="34" y="16" width="17" height="5" fill="#ff7297" />
-      <rect x="34" y="21" width="16" height="11" fill="#ffd0ba" />
-      <rect x="31" y="24" width="4" height="7" fill="#d94d77" />
-      <rect x="50" y="23" width="4" height="8" fill="#d94d77" />
-      <rect x="37" y="25" width="3" height="3" fill="#4c2038" />
-      <rect x="45" y="25" width="3" height="3" fill="#4c2038" />
-      <rect x="40" y="30" width="5" height="2" fill="#e88d87" />
-      <rect x="35" y="33" width="16" height="13" fill="#34405c" />
-      <rect x="38" y="33" width="10" height="4" fill="#f3e7df" />
-      <rect x="31" y="35" width="6" height="3" fill="#ffd0ba" />
-      <rect x="49" y="35" width="6" height="3" fill="#ffd0ba" />
-      <rect x="37" y="45" width="5" height="4" fill="#25263d" />
-      <rect x="46" y="45" width="5" height="4" fill="#25263d" />
-      <rect x="50" y="31" width="3" height="15" fill="#d58b54" />
-      <rect x="52" y="28" width="12" height="3" fill="#d58b54" />
-      <rect x="55" y="30" width="8" height="10" fill="#b94b5e" />
-      <rect x="58" y="33" width="3" height="3" fill="#ff9a83" />
+
+    <!-- Red-haired guitarist: side ponytail, white shirt, orange skirt. -->
+    <g id="red-girl" shape-rendering="crispEdges">
+      <ellipse cx="19" cy="96" rx="17" ry="2" fill="#9b2947" opacity="0.22" />
+      <rect x="9" y="10" width="21" height="6" fill="#b92d55" />
+      <rect x="5" y="16" width="27" height="15" fill="#e2536d" />
+      <rect x="0" y="18" width="9" height="12" fill="#bd3158" />
+      <rect x="27" y="15" width="9" height="15" fill="#bd3158" />
+      <rect x="11" y="18" width="17" height="14" fill="#ffd0ba" />
+      <rect x="14" y="23" width="3" height="3" fill="#4a2036" />
+      <rect x="23" y="23" width="3" height="3" fill="#4a2036" />
+      <rect x="17" y="29" width="6" height="2" fill="#df8b86" />
+      <rect x="10" y="33" width="18" height="14" fill="#f3e9df" />
+      <rect x="5" y="35" width="7" height="4" fill="#ffd0ba" />
+      <rect x="26" y="35" width="8" height="4" fill="#ffd0ba" />
+      <rect x="7" y="47" width="24" height="17" fill="#e99a55" />
+      <rect x="11" y="47" width="16" height="4" fill="#f2b76b" />
+      <rect x="12" y="64" width="6" height="27" fill="#ffd0ba" />
+      <rect x="23" y="64" width="6" height="27" fill="#ffd0ba" />
+      <rect x="9" y="89" width="10" height="5" fill="#4d3342" />
+      <rect x="22" y="89" width="10" height="5" fill="#4d3342" />
+    </g>
+
+    <!-- Blue-haired bassist: short blue hair, black top, long gray skirt. -->
+    <g id="blue-girl" shape-rendering="crispEdges">
+      <ellipse cx="19" cy="96" rx="17" ry="2" fill="#30314b" opacity="0.22" />
+      <rect x="7" y="10" width="24" height="6" fill="#354a82" />
+      <rect x="4" y="16" width="30" height="15" fill="#4766a4" />
+      <rect x="9" y="21" width="20" height="13" fill="#ffd0ba" />
+      <rect x="12" y="25" width="3" height="3" fill="#262b48" />
+      <rect x="23" y="25" width="3" height="3" fill="#262b48" />
+      <rect x="16" y="31" width="7" height="2" fill="#df8b86" />
+      <rect x="9" y="35" width="20" height="17" fill="#20243a" />
+      <rect x="4" y="37" width="7" height="4" fill="#ffd0ba" />
+      <rect x="27" y="37" width="7" height="4" fill="#ffd0ba" />
+      <rect x="6" y="51" width="26" height="31" fill="#596178" />
+      <rect x="10" y="51" width="18" height="4" fill="#737a8e" />
+      <rect x="10" y="81" width="7" height="11" fill="#ffd0ba" />
+      <rect x="21" y="81" width="7" height="11" fill="#ffd0ba" />
+      <rect x="8" y="90" width="10" height="5" fill="#22243a" />
+      <rect x="20" y="90" width="10" height="5" fill="#22243a" />
+    </g>
+
+    <!-- Pink-haired guitarist: long hair, pink sweater, dark pleated skirt. -->
+    <g id="pink-girl" shape-rendering="crispEdges">
+      <ellipse cx="19" cy="96" rx="17" ry="2" fill="#9b2947" opacity="0.22" />
+      <rect x="8" y="9" width="22" height="6" fill="#b93d72" />
+      <rect x="4" y="15" width="29" height="20" fill="#ed6d9d" />
+      <rect x="0" y="24" width="8" height="31" fill="#d9568b" />
+      <rect x="29" y="23" width="8" height="34" fill="#d9568b" />
+      <rect x="9" y="21" width="19" height="15" fill="#ffd0ba" />
+      <rect x="12" y="26" width="3" height="3" fill="#4a2036" />
+      <rect x="22" y="26" width="3" height="3" fill="#4a2036" />
+      <rect x="16" y="32" width="7" height="2" fill="#df8b86" />
+      <rect x="7" y="36" width="25" height="19" fill="#ef87a9" />
+      <rect x="2" y="39" width="8" height="4" fill="#ffd0ba" />
+      <rect x="30" y="39" width="8" height="4" fill="#ffd0ba" />
+      <rect x="8" y="55" width="24" height="15" fill="#3e3c53" />
+      <rect x="11" y="55" width="3" height="15" fill="#6b6077" />
+      <rect x="20" y="55" width="3" height="15" fill="#6b6077" />
+      <rect x="27" y="55" width="3" height="15" fill="#6b6077" />
+      <rect x="12" y="70" width="6" height="21" fill="#ffd0ba" />
+      <rect x="23" y="70" width="6" height="21" fill="#ffd0ba" />
+      <rect x="9" y="89" width="10" height="5" fill="#25263d" />
+      <rect x="22" y="89" width="10" height="5" fill="#25263d" />
+    </g>
+
+    <!-- Blonde drummer: long golden hair, lavender shirt, deep purple pants. -->
+    <g id="blonde-girl" shape-rendering="crispEdges">
+      <ellipse cx="19" cy="96" rx="17" ry="2" fill="#5d345d" opacity="0.22" />
+      <rect x="8" y="9" width="23" height="6" fill="#d9a83e" />
+      <rect x="4" y="15" width="29" height="17" fill="#f0c34e" />
+      <rect x="0" y="22" width="8" height="40" fill="#e3ad3d" />
+      <rect x="29" y="21" width="9" height="42" fill="#e3ad3d" />
+      <rect x="9" y="21" width="19" height="15" fill="#ffd0ba" />
+      <rect x="12" y="26" width="3" height="3" fill="#4a2036" />
+      <rect x="22" y="26" width="3" height="3" fill="#4a2036" />
+      <rect x="16" y="32" width="7" height="2" fill="#df8b86" />
+      <rect x="7" y="36" width="25" height="19" fill="#d9c3e7" />
+      <rect x="2" y="39" width="8" height="4" fill="#ffd0ba" />
+      <rect x="30" y="39" width="8" height="4" fill="#ffd0ba" />
+      <rect x="8" y="55" width="24" height="18" fill="#413060" />
+      <rect x="12" y="70" width="7" height="21" fill="#413060" />
+      <rect x="23" y="70" width="7" height="21" fill="#413060" />
+      <rect x="9" y="89" width="11" height="5" fill="#25263d" />
+      <rect x="22" y="89" width="11" height="5" fill="#25263d" />
     </g>
   </defs>
 
-  <rect width="680" height="64" fill="url(#dots)" opacity="0.45" />
-  <path d="M92 51H588" fill="none" stroke="#d7264f" stroke-opacity="0.18" />
-  <path d="M92 51H224M456 51H588" fill="none" stroke="url(#red)" stroke-linecap="round" />
-  <circle cx="84" cy="51" r="3" fill="#d7264f" />
-  <circle cx="596" cy="51" r="3" fill="#ff8c69">
-    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
-  </circle>
-  <use href="#pixel-person" />
-  <use href="#pixel-person" transform="translate(680 0) scale(-1 1)" opacity="0.82" />
+  <rect width="760" height="108" fill="url(#dots)" opacity="0.45" />
+  <path d="M82 84H678" stroke="#d7264f" stroke-opacity="0.16" />
+  <path d="M82 84H178M582 84H678" stroke="url(#red)" stroke-linecap="round" />
+  <use href="#red-girl" x="18" y="0" />
+  <use href="#blue-girl" x="72" y="0" />
+  <use href="#pink-girl" x="650" y="0" />
+  <use href="#blonde-girl" x="704" y="0" />
 
-  <!-- Each sentence has its own non-overlapping slot on the shared timeline. -->
-  <g fill="url(#red)" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" text-anchor="middle">
-    <text x="340" y="36"><tspan>把想法写成代码，把代码变成光</tspan><animate attributeName="opacity" values="1;1;1;0;0;0;1" keyTimes="0;.18;.20;.24;.74;.99;1" dur="16s" repeatCount="indefinite" /></text>
-    <text x="340" y="36" opacity="0"><tspan>AI 不是答案，而是探索答案的放大器</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.22;.24;.43;.45;.49;1" dur="16s" repeatCount="indefinite" /></text>
-    <text x="340" y="36" opacity="0"><tspan>在音乐与模型之间，给好奇心留一点回响</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.47;.49;.70;.72;.76;1" dur="16s" repeatCount="indefinite" /></text>
-    <text x="340" y="36" opacity="0"><tspan>持续迭代，不只修复 Bug，也修复生活</tspan><animate attributeName="opacity" values="0;0;1;1;1;0;0" keyTimes="0;.72;.74;.94;.96;.99;1" dur="16s" repeatCount="indefinite" /></text>
-  </g>
+  <text x="380" y="49" fill="url(#red)" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="20" text-anchor="middle">不必耀眼，先勇敢地发出自己的声音。</text>
 </svg>
