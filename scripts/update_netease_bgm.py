@@ -36,9 +36,8 @@ def main():
     if not liked:
         raise RuntimeError(f"找不到用户 {UID} 的“喜欢的音乐”歌单，请确认 UID 和 Cookie 属于同一个账号。")
 
-    tracks = request_json(
-        f"/api/playlist/track/all?id={liked['id']}&limit=1&offset=0"
-    ).get("songs", [])
+    detail = request_json(f"/api/playlist/detail?id={liked['id']}&s=0")
+    tracks = (detail.get("playlist") or {}).get("tracks", [])
     if not tracks:
         raise RuntimeError("“喜欢的音乐”歌单为空，或网易云没有返回歌曲数据。")
 
