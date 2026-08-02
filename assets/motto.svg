@@ -8,14 +8,14 @@
       <stop offset="1" stop-color="#e8795e" />
     </linearGradient>
     <clipPath id="write-on">
-      <rect x="24" y="61" width="372" height="50">
-        <animate attributeName="width" from="0" to="372" dur="4.8s" begin="0.3s" fill="freeze" />
+      <rect x="15" y="61" width="390" height="50">
+        <animate attributeName="width" from="0" to="390" dur="4.8s" begin="0.3s" fill="freeze" />
       </rect>
     </clipPath>
   </defs>
   <path d="M42 43C105 22 311 22 378 43" fill="none" stroke="#d62952" stroke-opacity="0.16" />
   <text x="210" y="51" text-anchor="middle" fill="#a55b70" font-family="Georgia, 'Times New Roman', serif" font-size="11" letter-spacing="3">A NOTE TO SELF</text>
-  <text x="210" y="99" text-anchor="middle" fill="url(#ink)" font-family="KaiTi, STKaiti, 'Noto Serif CJK SC', cursive" font-size="28" font-style="italic" clip-path="url(#write-on)">不必耀眼，先勇敢地发出自己的声音。</text>
+  <text x="210" y="99" text-anchor="middle" fill="url(#ink)" font-family="'STKaiti', 'KaiTi', 'FZKai-Z03', 'Noto Serif CJK SC', cursive" font-size="28" font-style="italic" clip-path="url(#write-on)">不必耀眼，先勇敢地发声。</text>
   <path d="M76 124C150 136 270 136 344 124" fill="none" stroke="url(#ink)" stroke-width="2" stroke-linecap="round" />
   <circle cx="66" cy="124" r="3" fill="#d62952" />
   <circle cx="354" cy="124" r="3" fill="#e8795e" />
