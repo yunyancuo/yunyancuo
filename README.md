@@ -4,7 +4,16 @@
 
 ### 「为生活 code！」
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="760" alt="像素乐队现场" />
+<table>
+  <tr>
+    <td width="46%" align="center" valign="middle">
+      <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/motto.svg" width="400" alt="座右铭：不必耀眼，先勇敢地发出自己的声音" />
+    </td>
+    <td width="54%" align="center" valign="middle">
+      <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="390" alt="像素乐队现场" />
+    </td>
+  </tr>
+</table>
 
 🌸 Python · AI · AstrBot · 自动化<br>
 🎵 用音乐保持灵感，用代码把想法落地<br>
