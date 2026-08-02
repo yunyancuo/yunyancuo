@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import html
 import urllib.parse
 import urllib.request
 
@@ -67,7 +68,18 @@ def main():
     song = tracks[0]
     artists = "、".join(artist.get("name", "未知歌手") for artist in song.get("ar", []))
     song_url = f"https://music.163.com/#/song?id={song['id']}"
-    replacement = f"🎵 [**{song.get('name', '未知歌曲')}**]({song_url}) · {artists}"
+    cover_url = (song.get("al") or {}).get("picUrl", "").replace("http://", "https://")
+    title = html.escape(song.get("name", "未知歌曲"))
+    safe_artists = html.escape(artists)
+    if cover_url:
+        replacement = (
+            f'<a href="{song_url}"><img src="{html.escape(cover_url)}" '
+            f'width="160" alt="{title} 封面"></a><br>'
+            f"🎵 <strong>{title}</strong> · {safe_artists}<br>"
+            f'<a href="{song_url}">▶ 在网易云播放</a>'
+        )
+    else:
+        replacement = f"🎵 [**{title}**]({song_url}) · {safe_artists}"
 
     with open(README, "r", encoding="utf-8") as file:
         content = file.read()
