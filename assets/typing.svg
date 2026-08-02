@@ -140,6 +140,106 @@
       <rect x="57" y="119" width="19" height="4" fill="#5aa4a9" />
       <rect x="67" y="115" width="11" height="14" fill="#3f888f" />
     </g>
+
+    <!-- Compact reference-style chibi sprites: large head, tiny body, 3px pixels. -->
+    <g id="mini-blue" shape-rendering="crispEdges">
+      <ellipse cx="33" cy="103" rx="25" ry="3" fill="#28304f" opacity="0.18" />
+      <rect x="15" y="8" width="36" height="5" fill="#222b4b" />
+      <rect x="9" y="13" width="48" height="10" fill="#344b86" />
+      <rect x="4" y="23" width="58" height="26" fill="#4567a7" />
+      <rect x="0" y="30" width="11" height="26" fill="#304d8b" />
+      <rect x="55" y="29" width="11" height="27" fill="#304d8b" />
+      <rect x="15" y="22" width="36" height="28" fill="#ffd5c1" />
+      <rect x="22" y="31" width="8" height="8" fill="#27304a" />
+      <rect x="38" y="31" width="8" height="8" fill="#27304a" />
+      <rect x="24" y="32" width="3" height="3" fill="#ffffff" />
+      <rect x="40" y="32" width="3" height="3" fill="#ffffff" />
+      <rect x="25" y="42" width="7" height="3" fill="#e98f91" />
+      <rect x="38" y="42" width="7" height="3" fill="#e98f91" />
+      <rect x="29" y="48" width="8" height="3" fill="#e28b87" />
+      <rect x="20" y="53" width="27" height="17" fill="#fff7ee" />
+      <rect x="27" y="53" width="13" height="5" fill="#e5a3a5" />
+      <rect x="17" y="70" width="34" height="14" fill="#737d93" />
+      <rect x="25" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="37" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="22" y="98" width="13" height="5" fill="#242b48" />
+      <rect x="35" y="98" width="13" height="5" fill="#242b48" />
+    </g>
+
+    <g id="mini-blonde" shape-rendering="crispEdges">
+      <ellipse cx="33" cy="103" rx="25" ry="3" fill="#6b3a58" opacity="0.18" />
+      <rect x="14" y="7" width="38" height="6" fill="#b17b2e" />
+      <rect x="8" y="13" width="50" height="11" fill="#edbb42" />
+      <rect x="3" y="23" width="59" height="27" fill="#f4c84f" />
+      <rect x="0" y="30" width="11" height="38" fill="#dca438" />
+      <rect x="55" y="29" width="12" height="39" fill="#dca438" />
+      <rect x="15" y="23" width="36" height="27" fill="#ffd5c1" />
+      <rect x="12" y="32" width="13" height="6" fill="#e0ad3b" />
+      <rect x="42" y="31" width="13" height="7" fill="#e0ad3b" />
+      <rect x="22" y="32" width="8" height="8" fill="#533249" />
+      <rect x="38" y="32" width="8" height="8" fill="#533249" />
+      <rect x="24" y="33" width="3" height="3" fill="#ffffff" />
+      <rect x="40" y="33" width="3" height="3" fill="#ffffff" />
+      <rect x="29" y="43" width="8" height="3" fill="#e28b87" />
+      <rect x="27" y="49" width="12" height="3" fill="#e95c76" />
+      <rect x="21" y="53" width="27" height="16" fill="#fff7ee" />
+      <rect x="26" y="53" width="17" height="6" fill="#e95c76" />
+      <rect x="17" y="69" width="34" height="15" fill="#302443" />
+      <rect x="25" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="37" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="22" y="98" width="13" height="5" fill="#302443" />
+      <rect x="35" y="98" width="13" height="5" fill="#302443" />
+    </g>
+
+    <g id="mini-pink" shape-rendering="crispEdges">
+      <ellipse cx="33" cy="103" rx="25" ry="3" fill="#8d3457" opacity="0.18" />
+      <rect x="14" y="7" width="38" height="6" fill="#af3e72" />
+      <rect x="8" y="13" width="50" height="12" fill="#e9689b" />
+      <rect x="2" y="22" width="12" height="48" fill="#cf5587" />
+      <rect x="53" y="21" width="13" height="50" fill="#cf5587" />
+      <rect x="15" y="23" width="36" height="27" fill="#ffd5c1" />
+      <rect x="11" y="32" width="14" height="7" fill="#d45388" />
+      <rect x="42" y="31" width="14" height="8" fill="#d45388" />
+      <rect x="21" y="31" width="9" height="8" fill="#60304b" />
+      <rect x="37" y="31" width="9" height="8" fill="#60304b" />
+      <rect x="23" y="32" width="3" height="3" fill="#ffffff" />
+      <rect x="39" y="32" width="3" height="3" fill="#ffffff" />
+      <rect x="25" y="42" width="7" height="3" fill="#ec8e9a" />
+      <rect x="38" y="42" width="7" height="3" fill="#ec8e9a" />
+      <rect x="29" y="48" width="8" height="3" fill="#e28b87" />
+      <rect x="20" y="53" width="28" height="17" fill="#ed87a8" />
+      <rect x="26" y="53" width="16" height="5" fill="#f5a4bd" />
+      <rect x="17" y="70" width="34" height="14" fill="#454054" />
+      <rect x="25" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="37" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="22" y="98" width="13" height="5" fill="#2b2a41" />
+      <rect x="35" y="98" width="13" height="5" fill="#2b2a41" />
+    </g>
+
+    <g id="mini-red" shape-rendering="crispEdges">
+      <ellipse cx="33" cy="103" rx="25" ry="3" fill="#782b48" opacity="0.18" />
+      <rect x="14" y="8" width="37" height="5" fill="#96274c" />
+      <rect x="8" y="13" width="50" height="11" fill="#dc4b68" />
+      <rect x="2" y="23" width="12" height="20" fill="#b83458" />
+      <rect x="53" y="20" width="15" height="20" fill="#b83458" />
+      <rect x="15" y="23" width="36" height="27" fill="#ffd5c1" />
+      <rect x="11" y="32" width="14" height="7" fill="#d34260" />
+      <rect x="42" y="32" width="14" height="7" fill="#d34260" />
+      <rect x="21" y="31" width="9" height="8" fill="#5a273e" />
+      <rect x="37" y="31" width="9" height="8" fill="#5a273e" />
+      <rect x="23" y="32" width="3" height="3" fill="#ffffff" />
+      <rect x="39" y="32" width="3" height="3" fill="#ffffff" />
+      <rect x="25" y="42" width="7" height="3" fill="#ec8e9a" />
+      <rect x="38" y="42" width="7" height="3" fill="#ec8e9a" />
+      <rect x="29" y="48" width="8" height="3" fill="#e28b87" />
+      <rect x="20" y="53" width="27" height="17" fill="#fff7ee" />
+      <rect x="27" y="53" width="13" height="5" fill="#e4a1a2" />
+      <rect x="17" y="70" width="34" height="14" fill="#e6924f" />
+      <rect x="25" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="37" y="84" width="8" height="16" fill="#ffd5c1" />
+      <rect x="22" y="98" width="13" height="5" fill="#473043" />
+      <rect x="35" y="98" width="13" height="5" fill="#473043" />
+    </g>
   </defs>
 
   <rect width="900" height="180" fill="url(#dots)" opacity="0.35" />
@@ -154,8 +254,8 @@
   <text x="68" y="96" fill="url(#red)" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="22" clip-path="url(#motto-reveal)">不必耀眼，先勇敢地发出自己的声音。</text>
   <text x="68" y="128" fill="#9e6a78" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="10" letter-spacing="1.5">CODE / MUSIC / KEEP GOING</text>
 
-  <use href="#blue-girl" transform="translate(580 38) scale(.62)" />
-  <use href="#blonde-girl" transform="translate(648 38) scale(.62)" />
-  <use href="#pink-girl" transform="translate(716 38) scale(.62)" />
-  <use href="#red-girl" transform="translate(784 38) scale(.62)" />
+  <use href="#mini-blue" transform="translate(580 48) scale(.82)" />
+  <use href="#mini-blonde" transform="translate(650 48) scale(.82)" />
+  <use href="#mini-pink" transform="translate(720 48) scale(.82)" />
+  <use href="#mini-red" transform="translate(790 48) scale(.82)" />
 </svg>
