@@ -11,7 +11,20 @@ README = "README.md"
 ERROR_LOG = "bgm-error.log"
 
 
+def cookie_value(name):
+    prefix = f"{name}="
+    for part in COOKIE.split(";"):
+        part = part.strip()
+        if part.startswith(prefix):
+            return part[len(prefix):]
+    return ""
+
+
 def request_json(path):
+    csrf = cookie_value("__csrf")
+    if csrf:
+        separator = "&" if "?" in path else "?"
+        path = f"{path}{separator}csrf_token={urllib.parse.quote(csrf)}"
     request = urllib.request.Request(
         f"https://music.163.com{path}",
         headers={
