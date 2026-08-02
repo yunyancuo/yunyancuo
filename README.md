@@ -6,8 +6,8 @@
 
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="760" alt="像素乐队现场" />
 
-🌸 Python · AI · AstrBot · 自动化
-🎵 用音乐保持灵感，用代码把想法落地
+🌸 Python · AI · AstrBot · 自动化<br>
+🎵 用音乐保持灵感，用代码把想法落地<br>
 🎤 在好奇心和实践之间持续迭代
 
 </div>
