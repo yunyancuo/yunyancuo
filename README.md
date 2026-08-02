@@ -2,7 +2,7 @@
 
 # 🎸 yunyancuo
 
-### 「为生活 code！」
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="450" alt="为生活热爱 code！" />
 
 <p align="center">
       <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/motto.svg" width="480" alt="座右铭：不必耀眼，先勇敢地发声" />
