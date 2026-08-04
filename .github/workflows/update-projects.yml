@@ -38,6 +38,7 @@ jobs:
             exit 0
           fi
           git commit -m "chore: auto-update projects"
-          git fetch origin main
-          git rebase origin/main || git rebase --abort
+          for i in 1 2 3; do
+            git pull --rebase --reapply-cherry-picks && break || sleep 3
+          done
           git push origin main

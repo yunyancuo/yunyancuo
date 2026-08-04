@@ -24,8 +24,9 @@ jobs:
         run: python scripts/generate_profile_cards.py
       - name: Update project list
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/update_profile_projects.py
+          GH_USER: yunyancuo
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: python scripts/generate_projects.py
       - name: Commit updated cards
         run: |
           git config user.name "github-actions[bot]"
