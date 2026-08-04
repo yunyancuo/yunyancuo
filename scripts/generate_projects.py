@@ -38,30 +38,43 @@ def fetch_head(url: str) -> httpx.Response:
 def get_contribution_info(owner: str, repo: str, is_fork: bool) -> dict:
     """
     Returns dict with 'commits' and 'role'.
-    Tries multiple APIs to get accurate data.
+    For forks, checks contributions on the upstream source repo.
     """
+    # For forks, find the source repo to check real contributions
+    target_owner = owner
+    target_repo = repo
+    if is_fork:
+        try:
+            repo_info = fetch_json(f"https://api.github.com/repos/{owner}/{repo}")
+            source = repo_info.get("source") or repo_info.get("parent")
+            if source:
+                target_owner = source["owner"]["login"]
+                target_repo = source["name"]
+        except Exception:
+            pass
+
     # Strategy 1: use author-filtered commits to get count
+    commits = 0
     try:
         resp = fetch_head(
-            f"https://api.github.com/repos/{owner}/{repo}/commits?author={USER}&per_page=1"
+            f"https://api.github.com/repos/{target_owner}/{target_repo}/commits?author={USER}&per_page=1"
         )
         link = resp.headers.get("link", "")
         if 'rel="last"' in link:
             last_page = int(re.search(r'page=(\d+)>; rel="last"', link).group(1))
             commits = last_page
         else:
-            # Check if the single page has any commits
             commits_page = fetch_json(
-                f"https://api.github.com/repos/{owner}/{repo}/commits?author={USER}&per_page=1"
+                f"https://api.github.com/repos/{target_owner}/{target_repo}/commits?author={USER}&per_page=1"
             )
             commits = 1 if (isinstance(commits_page, list) and len(commits_page) > 0) else 0
     except Exception:
-        commits = 0
+        pass
 
-    # Strategy 2: try stats API for relative contribution
+    # Strategy 2: try stats API on target repo
     try:
         stats = fetch_json(
-            f"https://api.github.com/repos/{owner}/{repo}/stats/contributors"
+            f"https://api.github.com/repos/{target_owner}/{target_repo}/stats/contributors"
         )
         if isinstance(stats, list) and len(stats) > 0:
             total = sum(a.get("total", 0) for a in stats)
@@ -86,7 +99,7 @@ def get_contribution_info(owner: str, repo: str, is_fork: bool) -> dict:
         if commits > 0:
             role = "Creator"
         else:
-            role = "Creator"  # they own the repo, assume creator even if stats haven't caught up
+            role = "Creator"
 
     return {"commits": commits, "role": role}
 
