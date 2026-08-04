@@ -46,13 +46,7 @@
 ## 🌈 技术栈
 
 ![Python](https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-FF8FAB?style=for-the-badge&logo=fastapi&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-9B5DE5?style=for-the-badge&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-FFC8DD?style=for-the-badge&logo=react&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-BDE0FE?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-A2D2FF?style=for-the-badge&logo=redis&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-FFAFCC?style=for-the-badge&logo=docker&logoColor=white)
-![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-CDB4DB?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-FFC8DD?style=for-the-badge&logo=jupyter&logoColor=white)
 ![AI](https://img.shields.io/badge/AI-9B5DE5?style=for-the-badge&logo=openai&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-FFB6C1?style=for-the-badge&logo=github&logoColor=white)
