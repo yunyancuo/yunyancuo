@@ -47,6 +47,8 @@
 
 ![Python](https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-FFAFCC?style=for-the-badge&logo=docker&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-9B5DE5?style=for-the-badge&logo=chroma&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-A2D2FF?style=for-the-badge&logo=elasticsearch&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-FFC8DD?style=for-the-badge&logo=jupyter&logoColor=white)
 ![AI](https://img.shields.io/badge/AI-9B5DE5?style=for-the-badge&logo=openai&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-FFB6C1?style=for-the-badge&logo=github&logoColor=white)
