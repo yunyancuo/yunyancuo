@@ -34,6 +34,7 @@
 <!-- PROJECTS:START -->
 | 项目 | 简介 |
 | --- | --- |
+| [🚀 VeloRAG](https://github.com/yunyancuo/velorag) | 生产级 RAG 框架 — 混合检索 + 知识图谱 + Agent Canvas + 多租户知识库，对标 RAGFlow 的开源航母 |
 | [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ |
 | [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 |
 | [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 \|\| 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 |
