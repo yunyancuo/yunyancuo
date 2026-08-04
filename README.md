@@ -32,8 +32,13 @@
 ## 🎀 我的项目
 
 <!-- PROJECTS:START -->
-| 项目 | 简介 | Stars | 语言 | 类型 | 我的参与 |
-| --- | --- | --- | --- | --- | --- |
+| 项目 | 简介 |
+| --- | --- |
+| [🐍 velorag](https://github.com/yunyancuo/velorag) | 🚀 Production-grade RAG framework — hybrid search + knowledge graph + agent canvas + multi-tenant KB. 开源航母级 RAG 引擎. |
+| [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ |
+| [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 |
+| [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 \|\| 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 |
+| [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | notes-for-deep-learniung |
 <!-- PROJECTS:END -->
 
 ## 🌈 技术栈
