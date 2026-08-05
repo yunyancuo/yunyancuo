@@ -69,7 +69,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1354474063"><img src="https://p4.music.126.net/Ldrg9ScUmVfwLPimRtqWjw==/109951164006741865.jpg" width="160" alt="Paint the Clouds 封面"></a><br>🎵 <strong>Paint the Clouds</strong> · Far East Movement、袁娅维TIA RAY<br><a href="https://music.163.com/#/song?id=1354474063">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=1354474063"><img src="https://p3.music.126.net/Ldrg9ScUmVfwLPimRtqWjw==/109951164006741865.jpg" width="160" alt="Paint the Clouds 封面"></a><br>🎵 <strong>Paint the Clouds</strong> · Far East Movement、袁娅维TIA RAY<br><a href="https://music.163.com/#/song?id=1354474063">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
