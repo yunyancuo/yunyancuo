@@ -28,61 +28,16 @@ jobs:
           cat /tmp/netease-api.log
           exit 1
 
-      - name: Refresh cookie if needed
-        id: cookie
-        env:
-          NETEASE_PHONE: ${{ secrets.NETEASE_PHONE }}
-          NETEASE_PASSWORD: ${{ secrets.NETEASE_PASSWORD }}
-          NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
-        run: |
-          output=$(python scripts/refresh_netease_cookie.py 2>&1) || true
-          echo "$output"
-          # Extract cookie value
-          cookie=$(echo "$output" | grep -oP 'COOKIE_(OK|NEW):\K.*')
-          if [ -n "$cookie" ]; then
-            echo "cookie=$cookie" >> $GITHUB_OUTPUT
-          else
-            echo "::warning::Cookie refresh failed, using fallback"
-            # Fallback to stored cookie
-            echo "cookie=$NETEASE_COOKIE" >> $GITHUB_OUTPUT
-          fi
-
       - name: Fetch latest liked song
         id: update
         env:
           NETEASE_UID: "1591928592"
-          NETEASE_COOKIE: ${{ steps.cookie.outputs.cookie }}
+          NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
           NETEASE_API_BASE: "http://127.0.0.1:3000"
         run: python scripts/update_netease_bgm.py
 
-      - name: Close cookie-expired issue
-        if: success()
-        uses: actions/github-script@v9
-        with:
-          script: |
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'cookie-expired',
-              creator: 'github-actions[bot]'
-            })
-            for (const issue of issues) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                body: 'Cookie auto-refreshed. BGM sync back to normal.'
-              })
-              await github.rest.issues.update({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                state: 'closed'
-              })
-            }
-
       - name: Commit README update
+        if: success()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -90,59 +45,43 @@ jobs:
           git diff --cached --quiet || git commit -m "Update today's BGM"
           git push
 
-      - name: Notify cookie expired (manual fix needed)
+      - name: Notify cookie expired
         if: failure()
         uses: actions/github-script@v9
         with:
           script: |
-            const fs = require('fs')
-            const error = fs.existsSync('bgm-error.log')
-              ? fs.readFileSync('bgm-error.log', 'utf8').trim()
-              : 'Unknown error'
-            const title = 'NetEase BGM sync failed'
+            const title = "NetEase BGM sync failed"
             const today = new Date().toISOString().slice(0, 10)
-
             const existing = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              labels: 'cookie-expired',
-              creator: 'github-actions[bot]'
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "cookie-expired", creator: "github-actions[bot]"
             })
             const issue = existing.data.find(i => i.title === title)
-
             if (issue) {
+              // Only comment once per day
               const comments = await github.rest.issues.listComments({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: issue.number,
-                per_page: 5
+                owner: context.repo.owner, repo: context.repo.repo, issue_number: issue.number, per_page: 5
               })
               const todayComments = comments.data.filter(c =>
-                c.created_at.startsWith(today) && c.user.login === 'github-actions[bot]'
+                c.created_at.startsWith(today) && c.user.login === "github-actions[bot]"
               )
               if (todayComments.length === 0) {
                 await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
+                  owner: context.repo.owner, repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: `${today} — Auto-login also failed. Manual fix needed.\nError: ${error}`
+                  body: `${today} — Cookie expired. Run "python scripts/qr_login.py" locally to refresh.`
                 })
               }
             } else {
               await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                labels: ['cookie-expired'],
-                body: `## Auto-login and cookie both failed
+                owner: context.repo.owner, repo: context.repo.repo, title, labels: ["cookie-expired"],
+                body: `Cookie expired. Refresh locally:
 
-                Error: ${error}
+                \`\`\`bash
+                pip install qrcode  # optional, for terminal QR display
+                python scripts/qr_login.py
+                \`\`\`
 
-                Manual steps:
-                1. Login at https://music.163.com
-                2. F12 → Application → Cookies → copy full cookie string
-                3. Update NETEASE_COOKIE in repo secrets
-                4. [Run workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/update-net-ease-bgm.yml)`
+                Then copy the cookie from netease_cookie.txt to GitHub Secrets → NETEASE_COOKIE.`
               })
             }
