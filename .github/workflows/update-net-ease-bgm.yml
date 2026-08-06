@@ -17,15 +17,17 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
+
       - name: Start NetEase API wrapper
         run: |
           nohup npx --yes NeteaseCloudMusicApi@4.32.0 > /tmp/netease-api.log 2>&1 &
-          for attempt in {1..30}; do
+          for attempt in $(seq 1 30); do
             curl --fail --silent http://127.0.0.1:3000/ >/dev/null && exit 0
             sleep 2
           done
           cat /tmp/netease-api.log
           exit 1
+
       - name: Fetch latest liked song
         id: update
         env:
@@ -33,44 +35,102 @@ jobs:
           NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
           NETEASE_API_BASE: "http://127.0.0.1:3000"
         run: python scripts/update_netease_bgm.py
-      - name: Commit README update
+
+      - name: Close cookie-expired issue
         if: success()
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'cookie-expired',
+              creator: 'github-actions[bot]'
+            })
+            for (const issue of issues) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                body: '✅ Cookie 已更新，BGM 同步恢复正常。'
+              })
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue.number,
+                state: 'closed'
+              })
+            }
+
+      - name: Commit README update
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md player-data.json
           git diff --cached --quiet || git commit -m "Update today's BGM"
           git push
-      - name: Report failure in GitHub issue
+
+      - name: Notify cookie expired
         if: failure()
         uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs')
-            const error = fs.existsSync('bgm-error.log')
+            let error = fs.existsSync('bgm-error.log')
               ? fs.readFileSync('bgm-error.log', 'utf8').trim()
-              : '工作流在获取或更新步骤失败，但没有生成详细错误日志。'
+              : '无详细错误日志'
+
             const title = '网易云 BGM 工作流失败'
-            const body = `自动更新“今日 BGM”失败。\n\n错误：\n\`\`\`\n${error}\n\`\`\`\n\n运行记录：${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`
+            const today = new Date().toISOString().slice(0, 10)
+
+            // Check if issue already exists
             const existing = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
-              creator: 'github-actions[bot]'
+              creator: 'github-actions[bot]',
+              labels: 'cookie-expired'
             })
-            const issue = existing.data.find(item => item.title === title)
+
+            const issue = existing.data.find(i => i.title === title)
+
             if (issue) {
-              await github.rest.issues.createComment({
+              // Only add comment once per day to avoid spam
+              const comments = await github.rest.issues.listComments({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                body
+                per_page: 5
               })
+              const todayComments = comments.data.filter(c =>
+                c.created_at.startsWith(today) && c.user.login === 'github-actions[bot]'
+              )
+              if (todayComments.length === 0) {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: issue.number,
+                  body: `📅 ${today} — Cookie 仍然过期。\n重新抓取后点击：[Run workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/update-net-ease-bgm.yml)`
+                })
+              }
             } else {
+              // Create new issue with fix instructions
               await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title,
-                body
+                labels: ['cookie-expired'],
+                body: `## 🔑 Cookie 过期，需要更新
+
+                请按以下步骤更新：
+
+                1. 浏览器打开 https://music.163.com 并登录
+                2. 按 F12 → Network → 找任意 /api/ 请求 → 右键 Copy as cURL
+                3. 从 curl 命令中复制整段 Cookie 值
+                4. 去 Settings → Secrets → Actions → 更新 NETEASE_COOKIE
+                5. 点击 [Run workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/update-net-ease-bgm.yml)
+
+                更新后 workflow 会自动关闭此 issue。`
               })
             }
