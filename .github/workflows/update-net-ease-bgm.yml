@@ -28,11 +28,30 @@ jobs:
           cat /tmp/netease-api.log
           exit 1
 
+      - name: Refresh cookie if needed
+        id: cookie
+        env:
+          NETEASE_PHONE: ${{ secrets.NETEASE_PHONE }}
+          NETEASE_PASSWORD: ${{ secrets.NETEASE_PASSWORD }}
+          NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
+        run: |
+          output=$(python scripts/refresh_netease_cookie.py 2>&1)
+          echo "$output"
+          # Extract cookie value
+          cookie=$(echo "$output" | grep -oP 'COOKIE_(OK|NEW):\K.*')
+          if [ -n "$cookie" ]; then
+            echo "cookie=$cookie" >> $GITHUB_OUTPUT
+          else
+            echo "::warning::Cookie refresh failed, using fallback"
+            # Fallback to stored cookie
+            echo "cookie=$NETEASE_COOKIE" >> $GITHUB_OUTPUT
+          fi
+
       - name: Fetch latest liked song
         id: update
         env:
           NETEASE_UID: "1591928592"
-          NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
+          NETEASE_COOKIE: ${{ steps.cookie.outputs.cookie }}
           NETEASE_API_BASE: "http://127.0.0.1:3000"
         run: python scripts/update_netease_bgm.py
 
@@ -53,7 +72,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: issue.number,
-                body: '✅ Cookie 已更新，BGM 同步恢复正常。'
+                body: 'Cookie auto-refreshed. BGM sync back to normal.'
               })
               await github.rest.issues.update({
                 owner: context.repo.owner,
@@ -71,32 +90,28 @@ jobs:
           git diff --cached --quiet || git commit -m "Update today's BGM"
           git push
 
-      - name: Notify cookie expired
+      - name: Notify cookie expired (manual fix needed)
         if: failure()
         uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs')
-            let error = fs.existsSync('bgm-error.log')
+            const error = fs.existsSync('bgm-error.log')
               ? fs.readFileSync('bgm-error.log', 'utf8').trim()
-              : '无详细错误日志'
-
-            const title = '网易云 BGM 工作流失败'
+              : 'Unknown error'
+            const title = 'NetEase BGM sync failed'
             const today = new Date().toISOString().slice(0, 10)
 
-            // Check if issue already exists
             const existing = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
               repo: context.repo.repo,
               state: 'open',
-              creator: 'github-actions[bot]',
-              labels: 'cookie-expired'
+              labels: 'cookie-expired',
+              creator: 'github-actions[bot]'
             })
-
             const issue = existing.data.find(i => i.title === title)
 
             if (issue) {
-              // Only add comment once per day to avoid spam
               const comments = await github.rest.issues.listComments({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
@@ -111,26 +126,23 @@ jobs:
                   owner: context.repo.owner,
                   repo: context.repo.repo,
                   issue_number: issue.number,
-                  body: `📅 ${today} — Cookie 仍然过期。\n重新抓取后点击：[Run workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/update-net-ease-bgm.yml)`
+                  body: `${today} — Auto-login also failed. Manual fix needed.\nError: ${error}`
                 })
               }
             } else {
-              // Create new issue with fix instructions
               await github.rest.issues.create({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 title,
                 labels: ['cookie-expired'],
-                body: `## 🔑 Cookie 过期，需要更新
+                body: `## Auto-login and cookie both failed
 
-                请按以下步骤更新：
+                Error: ${error}
 
-                1. 浏览器打开 https://music.163.com 并登录
-                2. 按 F12 → Network → 找任意 /api/ 请求 → 右键 Copy as cURL
-                3. 从 curl 命令中复制整段 Cookie 值
-                4. 去 Settings → Secrets → Actions → 更新 NETEASE_COOKIE
-                5. 点击 [Run workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/update-net-ease-bgm.yml)
-
-                更新后 workflow 会自动关闭此 issue。`
+                Manual steps:
+                1. Login at https://music.163.com
+                2. F12 → Application → Cookies → copy full cookie string
+                3. Update NETEASE_COOKIE in repo secrets
+                4. [Run workflow](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/update-net-ease-bgm.yml)`
               })
             }
