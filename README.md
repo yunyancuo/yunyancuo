@@ -34,13 +34,14 @@
 <!-- PROJECTS:START -->
 | 项目 | 简介 | Stars | 语言 | 类型 | 我的参与 |
 | --- | --- | --- | --- | --- | --- |
+| [📦 hearing-agent](https://github.com/yunyancuo/hearing-agent) | hearing-agent | 0 ⭐ | Python | 📦 source | Creator (—) |
 | [🚀 velorag](https://github.com/yunyancuo/velorag) | 🚀 Production-grade RAG framework — hybrid search + knowledge graph + agent canva | 0 ⭐ | Python | 📦 source | Creator (—) |
 | [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, | 0 ⭐ | — | 🍴 fork | Contributor (1 commits) |
 | [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 | 0 ⭐ | Python | 📦 source | Creator (17 commits) |
 | [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 || 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 | 0 ⭐ | — | 🍴 fork | viewer (—) |
 | [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | notes-for-deep-learniung | 0 ⭐ | Jupyter Notebook | 📦 source | Creator (19 commits) |
 
-> 自动更新 · 2026-08-05 02:49 UTC
+> 自动更新 · 2026-08-06 02:52 UTC
 <!-- PROJECTS:END -->
 
 ## 🌈 技术栈
