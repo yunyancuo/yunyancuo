@@ -35,7 +35,7 @@ jobs:
           NETEASE_PASSWORD: ${{ secrets.NETEASE_PASSWORD }}
           NETEASE_COOKIE: ${{ secrets.NETEASE_COOKIE }}
         run: |
-          output=$(python scripts/refresh_netease_cookie.py 2>&1)
+          output=$(python scripts/refresh_netease_cookie.py 2>&1) || true
           echo "$output"
           # Extract cookie value
           cookie=$(echo "$output" | grep -oP 'COOKIE_(OK|NEW):\K.*')
