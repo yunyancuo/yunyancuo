@@ -1,4 +1,4 @@
-name: Update NetEase BGM
+﻿name: Update NetEase BGM
 
 on:
   schedule:
@@ -13,8 +13,8 @@ jobs:
   update-bgm:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
       - name: Start NetEase API wrapper
@@ -43,7 +43,7 @@ jobs:
           git push
       - name: Report failure in GitHub issue
         if: failure()
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs')
