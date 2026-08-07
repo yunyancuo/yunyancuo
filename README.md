@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2696316066"><img src="https://p3.music.126.net/LetoH4rhKWUYhUsrmdbWdg==/109951170735449476.jpg" width="160" alt="Alright 封面"></a><br>🎵 <strong>Alright</strong> · SHarK<br><a href="https://music.163.com/#/song?id=2696316066">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=2696316066"><img src="https://p4.music.126.net/LetoH4rhKWUYhUsrmdbWdg==/109951170735449476.jpg" width="160" alt="Alright 封面"></a><br>🎵 <strong>Alright</strong> · SHarK<br><a href="https://music.163.com/#/song?id=2696316066">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
