@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1941657144"><img src="https://p3.music.126.net/KKgUg9N1-68M9Gdk_xadWg==/109951167342689095.jpg" width="160" alt="It Is What It Is 封面"></a><br>🎵 <strong>It Is What It Is</strong> · Jamie Miller<br><a href="https://music.163.com/#/song?id=1941657144">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=562181972"><img src="https://p4.music.126.net/xn97JraMLB_srjJzmbPRSg==/109951163922487324.jpg" width="160" alt="High Hopes 封面"></a><br>🎵 <strong>High Hopes</strong> · Panic! At The Disco<br><a href="https://music.163.com/#/song?id=562181972">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
