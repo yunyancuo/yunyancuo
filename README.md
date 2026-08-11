@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2023080382"><img src="https://p4.music.126.net/39niXRoLHetEkcgiiQdJSw==/109951168315456381.jpg" width="160" alt="HOPE 封面"></a><br>🎵 <strong>HOPE</strong> · NF<br><a href="https://music.163.com/#/song?id=2023080382">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=2650815712"><img src="https://p4.music.126.net/deLBSAVOOSGaXZ8M7nuwhQ==/109951172451774861.jpg" width="160" alt="茶花开了 封面"></a><br>🎵 <strong>茶花开了</strong> · 王睿卓<br><a href="https://music.163.com/#/song?id=2650815712">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
