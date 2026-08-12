@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1881671897"><img src="https://p4.music.126.net/c7lU2Zyuq7ca3lB2cTcOoQ==/109951166459245446.jpg" width="160" alt="can&#x27;t turn my back 封面"></a><br>🎵 <strong>can&#x27;t turn my back</strong> · SHarK<br><a href="https://music.163.com/#/song?id=1881671897">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=1986893311"><img src="https://p3.music.126.net/AeqqO6pe_-73s4o-_35bDA==/109951167995257455.jpg" width="160" alt="Violet 封面"></a><br>🎵 <strong>Violet</strong> · Connor Price、Killa<br><a href="https://music.163.com/#/song?id=1986893311">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
