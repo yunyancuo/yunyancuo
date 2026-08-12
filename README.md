@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=562181972"><img src="https://p4.music.126.net/xn97JraMLB_srjJzmbPRSg==/109951163922487324.jpg" width="160" alt="High Hopes 封面"></a><br>🎵 <strong>High Hopes</strong> · Panic! At The Disco<br><a href="https://music.163.com/#/song?id=562181972">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=2040603345"><img src="https://p3.music.126.net/1flkEdh8cfG04RILTqGqJw==/109951168557142816.jpg" width="160" alt="不再是个孩子 封面"></a><br>🎵 <strong>不再是个孩子</strong> · 谟西Mercy、SHarK<br><a href="https://music.163.com/#/song?id=2040603345">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
