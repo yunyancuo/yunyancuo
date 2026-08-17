@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3413209729"><img src="https://p3.music.126.net/VUmvtXuUpsmHt5WIZef3uA==/109951173658185235.jpg" width="160" alt="左转灯 (1000 Times+1) 封面"></a><br>🎵 <strong>左转灯 (1000 Times+1)</strong> · 派伟俊<br><a href="https://music.163.com/#/song?id=3413209729">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=1866760358"><img src="https://p4.music.126.net/FceD9ztqSLxJ2aKxPNKT8Q==/109951166249412967.jpg" width="160" alt="Terranova 封面"></a><br>🎵 <strong>Terranova</strong> · Janina<br><a href="https://music.163.com/#/song?id=1866760358">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
