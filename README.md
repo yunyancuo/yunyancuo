@@ -34,14 +34,14 @@
 <!-- PROJECTS:START -->
 | 项目 | 简介 | Stars | 语言 | 类型 | 我的参与 |
 | --- | --- | --- | --- | --- | --- |
-| [📦 todotree](https://github.com/yunyancuo/todotree) | 一款基于 Electron 的 Windows 桌面待办工具。读取 Markdown 文件，以半透明暗金窗口锁死在桌面底层，提供四分区（目标/待完成/已完成/放 | 0 ⭐ | JavaScript | 📦 source | Creator (—) |
+| [📦 todotree](https://github.com/yunyancuo/todotree) | 一款基于 Electron 的 Windows 桌面待办工具。读取 Markdown 文件，以半透明暗金窗口锁死在桌面底层，提供四分区（目标/待完成/已完成/放 | 0 ⭐ | JavaScript | 📦 source | Creator (9 commits) |
 | [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, | 0 ⭐ | Python | 🍴 fork | Contributor (1 commits) |
 | [🚀 velorag](https://github.com/yunyancuo/velorag) | 🚀 Production-grade RAG framework — hybrid search + knowledge graph + agent canva | 0 ⭐ | Python | 📦 source | Creator (—) |
 | [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 | 0 ⭐ | Python | 📦 source | Creator (17 commits) |
 | [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 || 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 | 0 ⭐ | — | 🍴 fork | viewer (—) |
 | [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | notes-for-deep-learniung | 0 ⭐ | Jupyter Notebook | 📦 source | Creator (19 commits) |
 
-> 自动更新 · 2026-08-18 01:24 UTC
+> 自动更新 · 2026-08-19 01:26 UTC
 <!-- PROJECTS:END -->
 
 ## 🌈 技术栈
