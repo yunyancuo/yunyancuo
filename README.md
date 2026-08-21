@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2107834992"><img src="https://p4.music.126.net/R4tPU2maCvY51GwgsBGPFg==/109951169166006317.jpg" width="160" alt="Heavy Weight (feat. Beat Saber) 封面"></a><br>🎵 <strong>Heavy Weight (feat. Beat Saber)</strong> · Lindsey Stirling、Beat Saber<br><a href="https://music.163.com/#/song?id=2107834992">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=3378232188"><img src="https://p4.music.126.net/aSsaQwG6PHMX9LcxF4OoLw==/109951173172932856.jpg" width="160" alt="Five Past Three 封面"></a><br>🎵 <strong>Five Past Three</strong> · The Chainsmokers、Oaks<br><a href="https://music.163.com/#/song?id=3378232188">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
