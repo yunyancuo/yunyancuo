@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=548556869"><img src="https://p4.music.126.net/lLe5qRI7G9UV1NTEEvLa-g==/109951166155142333.jpg" width="160" alt="半句再见 封面"></a><br>🎵 <strong>半句再见</strong> · 孙燕姿<br><a href="https://music.163.com/#/song?id=548556869">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=2107834992"><img src="https://p4.music.126.net/R4tPU2maCvY51GwgsBGPFg==/109951169166006317.jpg" width="160" alt="Heavy Weight (feat. Beat Saber) 封面"></a><br>🎵 <strong>Heavy Weight (feat. Beat Saber)</strong> · Lindsey Stirling、Beat Saber<br><a href="https://music.163.com/#/song?id=2107834992">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
