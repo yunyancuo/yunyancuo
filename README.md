@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3378232188"><img src="https://p3.music.126.net/aSsaQwG6PHMX9LcxF4OoLw==/109951173172932856.jpg" width="160" alt="Five Past Three 封面"></a><br>🎵 <strong>Five Past Three</strong> · The Chainsmokers、Oaks<br><a href="https://music.163.com/#/song?id=3378232188">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=109196"><img src="https://p4.music.126.net/rseQHt6MVwmyLMpY_f5bOQ==/131941395346293.jpg" width="160" alt="想太多 封面"></a><br>🎵 <strong>想太多</strong> · 李玖哲<br><a href="https://music.163.com/#/song?id=109196">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
