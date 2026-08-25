@@ -70,7 +70,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2739871903"><img src="https://p4.music.126.net/RWMmqPsIpY96teLLGPVKqg==/109951171928997751.jpg" width="160" alt="路 封面"></a><br>🎵 <strong>路</strong> · DOMMIU李由音<br><a href="https://music.163.com/#/song?id=2739871903">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=460043704"><img src="https://p3.music.126.net/99_i681E6ZE74t_xue6PUA==/109951166151204092.jpg" width="160" alt="Galway Girl 封面"></a><br>🎵 <strong>Galway Girl</strong> · Ed Sheeran<br><a href="https://music.163.com/#/song?id=460043704">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
