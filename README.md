@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2652774449"><img src="https://p4.music.126.net/nDmpbLU6eC2KjPUo7FEnAw==/109951173203131026.jpg" width="160" alt="浮岛The Isle 封面"></a><br>🎵 <strong>浮岛The Isle</strong> · 黄之仪Kyra Zilver<br><a href="https://music.163.com/#/song?id=2652774449">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=2652774449"><img src="https://p3.music.126.net/nDmpbLU6eC2KjPUo7FEnAw==/109951173203131026.jpg" width="160" alt="浮岛The Isle 封面"></a><br>🎵 <strong>浮岛The Isle</strong> · 黄之仪Kyra Zilver<br><a href="https://music.163.com/#/song?id=2652774449">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
