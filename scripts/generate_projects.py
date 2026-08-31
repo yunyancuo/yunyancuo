@@ -116,7 +116,7 @@ def main():
             continue
 
         icon = ICONS.get(name, "📦")
-        desc = (repo.get("description") or name)[:80]
+        desc = ((repo.get("description") or name)[:80]).replace("|", "\\|")
         url = repo["html_url"]
         lang = repo.get("language") or "—"
         stars = repo.get("stargazers_count", 0)

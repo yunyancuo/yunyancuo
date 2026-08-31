@@ -46,6 +46,23 @@ def request_json(path):
     return result
 
 
+def download_cover(url):
+    """封面落盘到仓库本地：126.net CDN 对 GitHub camo 代理（海外出口）经常超时，外链时好时坏。"""
+    request = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 GitHub Actions"})
+    with urllib.request.urlopen(request, timeout=30) as response:
+        data = response.read()
+        content_type = response.headers.get("Content-Type", "")
+    ext = ".png" if "png" in content_type.lower() else ".jpg"
+    os.makedirs("assets", exist_ok=True)
+    path = f"assets/bgm-cover{ext}"
+    for old in ("assets/bgm-cover.jpg", "assets/bgm-cover.png"):
+        if os.path.exists(old) and old != path:
+            os.remove(old)
+    with open(path, "wb") as file:
+        file.write(data)
+    return path
+
+
 def main():
     if not COOKIE:
         raise RuntimeError("缺少 NETEASE_COOKIE。请在 GitHub 仓库 Settings > Secrets and variables > Actions 中添加它。")
@@ -79,9 +96,16 @@ def main():
         pass
     title = html.escape(song.get("name", "未知歌曲"))
     safe_artists = html.escape(artists)
+    local_cover = ""
     if cover_url:
+        try:
+            local_cover = download_cover(cover_url)
+        except Exception as error:
+            print(f"封面下载失败，回退到网易云外链: {error}")
+    if cover_url:
+        img_src = local_cover or cover_url
         replacement = (
-            f'<a href="{song_url}"><img src="{html.escape(cover_url)}" '
+            f'<a href="{song_url}"><img src="{html.escape(img_src)}" '
             f'width="160" alt="{title} 封面"></a><br>'
             f"🎵 <strong>{title}</strong> · {safe_artists}<br>"
             f'<a href="{song_url}">▶ 在网易云播放</a>'
