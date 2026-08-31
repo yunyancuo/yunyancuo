@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2617050371"><img src="assets/bgm-cover.jpg" width="160" alt="RUNAWAY 封面"></a><br>🎵 <strong>RUNAWAY</strong> · Connor Price、Hoodie Allen<br><a href="https://music.163.com/#/song?id=2617050371">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=27937429"><img src="assets/bgm-cover.jpg" width="160" alt="盛夏的果实 封面"></a><br>🎵 <strong>盛夏的果实</strong> · 莫文蔚<br><a href="https://music.163.com/#/song?id=27937429">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
