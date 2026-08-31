@@ -40,10 +40,10 @@
 | [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, | 0 ⭐ | Python | 🍴 fork | Contributor (1 commits) |
 | [🚀 velorag](https://github.com/yunyancuo/velorag) | 🚀 Production-grade RAG framework — hybrid search + knowledge graph + agent canva | 0 ⭐ | Python | 📦 source | Creator (—) |
 | [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 | 0 ⭐ | Python | 📦 source | Creator (17 commits) |
-| [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 || 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 | 0 ⭐ | — | 🍴 fork | viewer (—) |
+| [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 \|\| 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 | 0 ⭐ | — | 🍴 fork | viewer (—) |
 | [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | notes-for-deep-learniung | 0 ⭐ | Jupyter Notebook | 📦 source | Creator (19 commits) |
 
-> 自动更新 · 2026-08-31 09:51 UTC
+> 自动更新 · 2026-08-31 09:55 UTC
 <!-- PROJECTS:END -->
 
 ## 🌈 技术栈
