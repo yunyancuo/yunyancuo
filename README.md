@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3397056929"><img src="assets/bgm-cover.jpg" width="160" alt="DOWNTOWN BOSS 封面"></a><br>🎵 <strong>DOWNTOWN BOSS</strong> · ICE杨长青、GALI<br><a href="https://music.163.com/#/song?id=3397056929">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=484365611"><img src="assets/bgm-cover.jpg" width="160" alt="Parties 封面"></a><br>🎵 <strong>Parties</strong> · Jake Miller<br><a href="https://music.163.com/#/song?id=484365611">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
