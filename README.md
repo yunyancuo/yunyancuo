@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=484365611"><img src="assets/bgm-cover.jpg" width="160" alt="Parties 封面"></a><br>🎵 <strong>Parties</strong> · Jake Miller<br><a href="https://music.163.com/#/song?id=484365611">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=1382892407"><img src="assets/bgm-cover.jpg" width="160" alt="Prelude 封面"></a><br>🎵 <strong>Prelude</strong> · Andria Rose<br><a href="https://music.163.com/#/song?id=1382892407">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
