@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1339550105"><img src="assets/bgm-cover.jpg" width="160" alt="BIG PLANS 封面"></a><br>🎵 <strong>BIG PLANS</strong> · Why Don&#x27;t We<br><a href="https://music.163.com/#/song?id=1339550105">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=1312435002"><img src="assets/bgm-cover.jpg" width="160" alt="Outrunning Karma 封面"></a><br>🎵 <strong>Outrunning Karma</strong> · Alec Benjamin<br><a href="https://music.163.com/#/song?id=1312435002">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
