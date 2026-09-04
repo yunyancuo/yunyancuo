@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3347295437"><img src="assets/bgm-cover.jpg" width="160" alt="失眠了 封面"></a><br>🎵 <strong>失眠了</strong> · 吴琳珂Moske<br><a href="https://music.163.com/#/song?id=3347295437">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=33071205"><img src="assets/bgm-cover.jpg" width="160" alt="Rumors 封面"></a><br>🎵 <strong>Rumors</strong> · Jake Miller<br><a href="https://music.163.com/#/song?id=33071205">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
