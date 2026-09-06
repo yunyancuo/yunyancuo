@@ -106,8 +106,9 @@ def main():
         img_src = local_cover or cover_url
         replacement = (
             f'<a href="{song_url}"><img src="{html.escape(img_src)}" '
-            f'width="160" alt="{title} 封面"></a><br>'
-            f"🎵 <strong>{title}</strong> · {safe_artists}<br>"
+            f'width="180" alt="{title} 封面"></a><br><br>'
+            f"🎵 <strong>{title}</strong><br>"
+            f"🎼 {safe_artists}<br>"
             f'<a href="{song_url}">▶ 在网易云播放</a>'
         )
     else:

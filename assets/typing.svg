@@ -242,6 +242,7 @@
     </g>
   </defs>
 
+  <rect width="900" height="180" rx="16" fill="#fffdf8" stroke="#f2c9d6" stroke-width="1.5" />
   <rect width="900" height="180" fill="url(#dots)" opacity="0.35" />
   <path d="M46 28H535M46 153H535" stroke="#d7264f" stroke-opacity="0.16" />
   <path d="M558 28V153" stroke="#d7264f" stroke-opacity="0.2" />

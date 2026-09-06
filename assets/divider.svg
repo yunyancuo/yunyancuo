@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="26" viewBox="0 0 800 26" role="img" aria-label="粉色波浪分隔线">
+  <defs>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd3e0" />
+      <stop offset="0.5" stop-color="#e9458a" />
+      <stop offset="1" stop-color="#ffd3e0" />
+    </linearGradient>
+  </defs>
+  <path d="M8 13 Q 28 4 48 13 T 88 13 T 128 13 T 168 13 T 208 13 T 248 13 T 288 13 T 328 13 T 368 13 T 408 13 T 448 13 T 488 13 T 528 13 T 568 13 T 608 13 T 648 13 T 688 13 T 728 13 T 768 13 T 792 13" fill="none" stroke="url(#wave)" stroke-width="3" stroke-linecap="round" />
+  <rect x="395" y="8" width="10" height="10" rx="2.5" transform="rotate(45 400 13)" fill="#e9458a" />
+</svg>
