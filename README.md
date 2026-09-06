@@ -11,17 +11,24 @@
 
 ## 🌟 关于我
 
-<div align="center">
-
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="250" alt="像素乐队现场" />
-
-</div>
+<table>
+<tr>
+<td width="58%" valign="middle">
 
 | 🎈 性格 | 元气、热情、喜欢交朋友 |
 | --- | --- |
 | 🎧 日常 | 写代码 / 听歌 / 研究 AI |
 | 🛠️ 状态 | 把 Bug 变成下一次理解 |
 | 🎯 目标 | 做有用、有趣、值得留下的东西 |
+
+</td>
+<td width="42%" valign="middle" align="center">
+
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="240" alt="像素乐队现场" />
+
+</td>
+</tr>
+</table>
 
 ---
 
