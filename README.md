@@ -65,6 +65,18 @@
 
 ---
 
+## 🖥️ 技术面板
+
+<div align="center">
+
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/tech-panel.svg" width="680" alt="yunyancuo 的 neofetch 技术面板" />
+
+<img src="https://streak-stats.demolab.com?user=yunyancuo&locale=zh_Hans&background=0D1117&border=30363D&stroke=30363D&ring=DD4F6B&fire=DD4F6B&currStreakLabel=DD4F6B&sideLabels=8B949E&sideNums=E6EDF3&currStreakNum=E6EDF3&dates=8B949E" height="160" alt="连续提交统计" />
+
+</div>
+
+---
+
 ## 📊 GitHub 状态
 
 <div align="center">
