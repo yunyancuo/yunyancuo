@@ -73,8 +73,8 @@
 <img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/top-languages.svg" alt="常用语言" />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake-dark.svg" />
-  <img width="640" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake.svg" alt="贡献贪吃蛇" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake-dark.svg?v=2" />
+  <img width="640" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake.svg?v=2" alt="贡献贪吃蛇" />
 </picture>
 
 </div>
