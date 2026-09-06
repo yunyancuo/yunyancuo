@@ -13,7 +13,7 @@
 
 <div align="center">
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="360" alt="像素乐队现场" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="250" alt="像素乐队现场" />
 
 </div>
 
@@ -49,7 +49,11 @@
 <div align="center">
 
 **语言 & 工具**<br>
-<img src="https://skillicons.dev/icons?i=python,jupyter,docker,elasticsearch,github" alt="Python, Jupyter, Docker, Elasticsearch, GitHub" />
+![Python](https://img.shields.io/badge/Python-24292F?style=flat-square&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-24292F?style=flat-square&logo=jupyter&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-24292F?style=flat-square&logo=docker&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-24292F?style=flat-square&logo=elasticsearch&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-24292F?style=flat-square&logo=github&logoColor=white)
 
 <br>
 
