@@ -19,8 +19,8 @@ jobs:
         with:
           github_user_name: yunyancuo
           outputs: |
-            assets/github-snake.svg?color_snake=%23e9709c&color_dots=%23ffe3ec,%23ffb3d1,%23ff8ac2,%23f76aa7,%23e9458a
-            assets/github-snake-dark.svg?color_snake=%23ff8ac2&color_dots=%232b2135,%234a2b48,%237a3a67,%23b34a86,%23eb6ba8
+            assets/github-snake.svg?color_snake=%23dd4f6b&color_dots=%23ebedf0,%23f7d9dd,%23f0aebc,%23e77f94,%23dd4f6b
+            assets/github-snake-dark.svg?color_snake=%23dd4f6b&color_dots=%23161b22,%233a2731,%236e3a4d,%23a84963,%23dd4f6b
       - name: Commit snake to main
         run: |
           git config user.name "github-actions[bot]"

@@ -7,8 +7,6 @@
 🌸 Python · AI · AstrBot · 自动化<br>
 🎤 在好奇心和实践之间持续迭代
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/divider.svg" width="600" alt="" />
-
 </div>
 
 ## 🌟 关于我
@@ -51,17 +49,17 @@
 <div align="center">
 
 **语言 & 工具**<br>
-![Python](https://img.shields.io/badge/Python-FFB6C1?style=for-the-badge&logo=python&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-FFAFCC?style=for-the-badge&logo=docker&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-FFC8DD?style=for-the-badge&logo=jupyter&logoColor=white)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-A2D2FF?style=for-the-badge&logo=elasticsearch&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-FFB6C1?style=for-the-badge&logo=github&logoColor=white)
+![Python](https://img.shields.io/badge/Python-24292F?style=flat-square&logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-24292F?style=flat-square&logo=jupyter&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-24292F?style=flat-square&logo=docker&logoColor=white)
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-24292F?style=flat-square&logo=elasticsearch&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-24292F?style=flat-square&logo=github&logoColor=white)
 
 **方向**<br>
-![AI](https://img.shields.io/badge/AI-9B5DE5?style=for-the-badge&logo=openai&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-CDB4DB?style=for-the-badge&logo=chroma&logoColor=white)
-![自动化](https://img.shields.io/badge/%E8%87%AA%E5%8A%A8%E5%8C%96-F4978E?style=for-the-badge&logo=githubactions&logoColor=white)
-![AstrBot](https://img.shields.io/badge/AstrBot-F8AFA6?style=for-the-badge&logoColor=white)
+![AI](https://img.shields.io/badge/AI-DD4F6B?style=flat-square&logo=openai&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-DD4F6B?style=flat-square&logo=chroma&logoColor=white)
+![自动化](https://img.shields.io/badge/%E8%87%AA%E5%8A%A8%E5%8C%96-DD4F6B?style=flat-square&logo=githubactions&logoColor=white)
+![AstrBot](https://img.shields.io/badge/AstrBot-DD4F6B?style=flat-square)
 
 </div>
 
@@ -99,12 +97,10 @@
 
 <div align="center">
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/divider.svg" width="600" alt="" />
-
 *「有目的的人才会迷路，我只是来人间散步。」*
 
 **如果喜欢我的项目，欢迎点个 Star ⭐**
 
-![Profile views](https://komarev.com/ghpvc/?username=yunyancuo&label=Profile%20views&color=ff5c8a&style=flat-square)
+![Profile views](https://komarev.com/ghpvc/?username=yunyancuo&label=Profile%20views&color=dd4f6b&style=flat-square)
 
 </div>
