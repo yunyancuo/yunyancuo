@@ -72,7 +72,7 @@
 ```
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1312435002"><img src="assets/bgm-cover.jpg" width="160" alt="Outrunning Karma 封面"></a><br>🎵 <strong>Outrunning Karma</strong> · Alec Benjamin<br><a href="https://music.163.com/#/song?id=1312435002">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=3432122560"><img src="assets/bgm-cover.jpg" width="160" alt="拖皮 (Live) 封面"></a><br>🎵 <strong>拖皮 (Live)</strong> · 布瑞吉Bridge<br><a href="https://music.163.com/#/song?id=3432122560">▶ 在网易云播放</a>
 <!-- NETEASE_BGM:END -->
 
 <div align="center">
