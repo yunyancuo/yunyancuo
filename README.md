@@ -101,8 +101,6 @@
 
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/divider.svg" width="600" alt="" />
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/motto.svg" width="420" alt="不必耀眼，先勇敢地发声" />
-
 *「有目的的人才会迷路，我只是来人间散步。」*
 
 **如果喜欢我的项目，欢迎点个 Star ⭐**
