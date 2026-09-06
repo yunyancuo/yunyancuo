@@ -4,8 +4,6 @@
 
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="820" alt="为生活热爱 code！" />
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/typing.svg" width="780" alt="不必耀眼，先勇敢地发出自己的声音" />
-
 🌸 Python · AI · AstrBot · 自动化<br>
 🎤 在好奇心和实践之间持续迭代
 
