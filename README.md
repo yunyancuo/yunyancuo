@@ -2,10 +2,7 @@
 
 # 🎸 云烟错
 
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="820" alt="为生活热爱 code！" />
-
-🌸 Python · AI · AstrBot · 自动化<br>
-🎤 在好奇心和实践之间持续迭代
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="600" alt="为生活热爱 code！" />
 
 </div>
 
