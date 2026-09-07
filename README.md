@@ -1,8 +1,8 @@
-## 🌟 关于我
+## 🌟 About Me
 
 <div align="center">
 
-<h1>🎸 云烟错</h1>
+<h1>🎸 Hello, I'm 云烟错</h1>
 
 </div>
 
@@ -10,26 +10,26 @@
 <tr>
 <td width="62%" valign="bottom">
 <div align="center">
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg?v=6" width="500" alt="为生活热爱 code！" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg?v=6" width="500" alt="Calligraphy banner — love code, love life" />
 <div align="center">
 <table align="center">
-<tr><td>🎈 <strong>性格</strong></td><td>元气、热情、喜欢交朋友</td></tr>
-<tr><td>🎧 <strong>日常</strong></td><td>写代码 / 听歌 / 研究 AI</td></tr>
-<tr><td>🛠️ <strong>状态</strong></td><td>把 Bug 变成下一次理解</td></tr>
-<tr><td>🎯 <strong>目标</strong></td><td>做有用、有趣、值得留下的东西</td></tr>
+<tr><td>🎈 <strong>Personality</strong></td><td>Energetic, warm, and always up for new friends</td></tr>
+<tr><td>🎧 <strong>Daily</strong></td><td>Coding / Music / Exploring AI</td></tr>
+<tr><td>🛠️ <strong>Status</strong></td><td>Turning every bug into the next understanding</td></tr>
+<tr><td>🎯 <strong>Goal</strong></td><td>Building useful, fun things worth leaving behind</td></tr>
 </table>
 </div>
 
 </td>
 <td width="38%" valign="bottom" align="right">
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="260" alt="像素乐队现场" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="260" alt="Pixel band on stage" />
 </td>
 </tr>
 </table>
 
 ---
 
-## 🎀 我的项目
+## 🎀 Projects
 
 <!-- PROJECTS:START -->
 <table>
@@ -37,15 +37,15 @@
 <td width="50%" valign="top">
 
 **🖥️ [todotree](https://github.com/yunyancuo/todotree)** ![release](https://img.shields.io/github/v/release/yunyancuo/todotree?style=flat-square&color=dd4f6b)  
-Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW），数据就是一份 Markdown  
+A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the desktop layer (WorkerW). Data is just one Markdown file  
 `Electron` `Markdown` `WorkerW`
 
 </td>
 <td width="50%" valign="top">
 
 **🚀 [velorag](https://github.com/yunyancuo/velorag)**  
-混合检索 + 知识图谱 + Agent 画布的生产级 RAG 框架  
-`Python` `RAG` `知识图谱`
+Production-grade RAG framework — hybrid search + knowledge graph + agent canvas  
+`Python` `RAG` `Knowledge Graph`
 
 </td>
 </tr>
@@ -53,14 +53,14 @@ Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW
 <td width="50%" valign="top">
 
 **🐍 [astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo)**  
-鸣潮声骸自动评分的 AstrBot 插件  
-`Python` `AstrBot 插件`
+Wuthering Waves echo scoring plugin for AstrBot  
+`Python` `AstrBot Plugin`
 
 </td>
 <td width="50%" valign="top">
 
 **🧪 [keresearch](https://github.com/yunyancuo/keresearch)**  
-科研全生命周期 Agent Skills：选题 → 实验 → 写作 → 投稿（ZCode / Claude Code 通用）  
+Research-lifecycle Agent Skills: topic selection → experiments → writing → submission (Claude Code & ZCode ready)  
 `Agent Skills` `Claude Code`
 
 </td>
@@ -69,30 +69,30 @@ Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW
 <td width="50%" valign="top">
 
 **📚 [notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung)**  
-深度学习论文笔记与代码实践  
-`Jupyter` `深度学习`
+Deep learning paper notes with hands-on code  
+`Jupyter` `Deep Learning`
 
 </td>
 <td width="50%" valign="top">
 
-**🔎 更多实验与练习**  
-爬虫、脚本、踩坑记录都在仓库列表里  
-[全部仓库 →](https://github.com/yunyancuo?tab=repositories)
+**🔎 More experiments**  
+Crawlers, scripts and lessons learned — see the full repo list  
+[All repositories →](https://github.com/yunyancuo?tab=repositories)
 
 </td>
 </tr>
 </table>
 
-> 自动更新 · 2026-09-07 09:10 UTC
+> Auto-updated · 2026-09-07 10:32 UTC
 <!-- PROJECTS:END -->
 
 ---
 
-## 🌈 技术栈
+## 🌈 Tech Stack
 
 <div align="center">
 
-**语言 & 工具**<br>
+**Languages & Tools**<br>
 ![Python](https://img.shields.io/badge/Python-24292F?style=flat-square&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-24292F?style=flat-square&logo=jupyter&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-24292F?style=flat-square&logo=docker&logoColor=white)
@@ -101,42 +101,42 @@ Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW
 
 <br>
 
-**AI 方向**<br>
+**AI Focus**<br>
 ![LLM](https://img.shields.io/badge/LLM-DD4F6B?style=flat-square)
 ![AI Agent](https://img.shields.io/badge/AI%20Agent-DD4F6B?style=flat-square)
 ![RAG](https://img.shields.io/badge/RAG-DD4F6B?style=flat-square)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-DD4F6B?style=flat-square)
 ![AstrBot](https://img.shields.io/badge/AstrBot-DD4F6B?style=flat-square)
-![自动化](https://img.shields.io/badge/%E8%87%AA%E5%8A%A8%E5%8C%96-DD4F6B?style=flat-square)
+![Automation](https://img.shields.io/badge/Automation-DD4F6B?style=flat-square)
 
 </div>
 
 ---
 
-## 📊 GitHub 状态
+## 📊 GitHub Stats
 
 <div align="center">
 
-<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-stats.svg" alt="GitHub 统计" />
-<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/top-languages.svg" alt="常用语言" />
+<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-stats.svg" alt="GitHub stats" />
+<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/top-languages.svg" alt="Top languages" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake-dark.svg?v=2" />
-  <img width="640" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake.svg?v=2" alt="贡献贪吃蛇" />
+  <img width="640" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake.svg?v=2" alt="Contribution snake" />
 </picture>
 
 </div>
 
 ---
 
-## 🎶 今日 BGM
+## 🎶 Today's BGM
 
 <div align="center">
 
-*♪ 音乐一响，灵感登场 ♪*
+*♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3432122560"><img src="assets/bgm-cover.jpg" width="180" alt="拖皮 (Live) 封面"></a><br><br>🎵 <strong>拖皮 (Live)</strong><br>🎼 布瑞吉Bridge<br><a href="https://music.163.com/#/song?id=3432122560">▶ 在网易云播放</a>
+<a href="https://music.163.com/#/song?id=3432122560"><img src="assets/bgm-cover.jpg" width="180" alt="拖皮 (Live) cover"></a><br><br>🎵 <strong>拖皮 (Live)</strong><br>🎼 布瑞吉Bridge<br><a href="https://music.163.com/#/song?id=3432122560">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
@@ -145,9 +145,9 @@ Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW
 
 <div align="center">
 
-*「有目的的人才会迷路，我只是来人间散步。」*
+*"People with destinations get lost — I'm just here for a stroll through life."*
 
-**如果喜欢我的项目，欢迎点个 Star ⭐**
+**If you like my projects, a Star ⭐ is much appreciated**
 
 ![Profile views](https://komarev.com/ghpvc/?username=yunyancuo&label=Profile%20views&color=dd4f6b&style=flat-square)
 

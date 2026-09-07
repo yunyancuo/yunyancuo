@@ -27,19 +27,19 @@ ICONS = {
 }
 
 BLURBS = {
-    "todotree": "Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW），数据就是一份 Markdown",
-    "velorag": "混合检索 + 知识图谱 + Agent 画布的生产级 RAG 框架",
-    "astrbot_plugin_wuwa_echo": "鸣潮声骸自动评分的 AstrBot 插件",
-    "keresearch": "科研全生命周期 Agent Skills：选题 → 实验 → 写作 → 投稿（ZCode / Claude Code 通用）",
-    "notes-for-deep-learniung": "深度学习论文笔记与代码实践",
+    "todotree": "A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the desktop layer (WorkerW). Data is just one Markdown file",
+    "velorag": "Production-grade RAG framework — hybrid search + knowledge graph + agent canvas",
+    "astrbot_plugin_wuwa_echo": "Wuthering Waves echo scoring plugin for AstrBot",
+    "keresearch": "Research-lifecycle Agent Skills: topic selection → experiments → writing → submission (Claude Code & ZCode ready)",
+    "notes-for-deep-learniung": "Deep learning paper notes with hands-on code",
 }
 
 TAGS = {
     "todotree": ["Electron", "Markdown", "WorkerW"],
-    "velorag": ["Python", "RAG", "知识图谱"],
-    "astrbot_plugin_wuwa_echo": ["Python", "AstrBot 插件"],
+    "velorag": ["Python", "RAG", "Knowledge Graph"],
+    "astrbot_plugin_wuwa_echo": ["Python", "AstrBot Plugin"],
     "keresearch": ["Agent Skills", "Claude Code"],
-    "notes-for-deep-learniung": ["Jupyter", "深度学习"],
+    "notes-for-deep-learniung": ["Jupyter", "Deep Learning"],
 }
 
 
@@ -160,9 +160,9 @@ def main():
     if len(cells) % 2 == 1:
         cells.append(
             '<td width="50%" valign="top">\n\n'
-            "**🔎 更多实验与练习**  \n"
-            "爬虫、脚本、踩坑记录都在仓库列表里  \n"
-            f"[全部仓库 →](https://github.com/{USER}?tab=repositories)\n\n"
+            "**🔎 More experiments**  \n"
+            "Crawlers, scripts and lessons learned — see the full repo list  \n"
+            f"[All repositories →](https://github.com/{USER}?tab=repositories)\n\n"
             "</td>"
         )
 
@@ -179,7 +179,7 @@ def main():
     replacement = (
         "<!-- PROJECTS:START -->\n"
         + "\n".join(rows)
-        + f"\n\n> 自动更新 · {stamp}\n"
+        + f"\n\n> Auto-updated · {stamp}\n"
         + "<!-- PROJECTS:END -->"
     )
 

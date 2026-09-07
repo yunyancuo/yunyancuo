@@ -106,10 +106,10 @@ def main():
         img_src = local_cover or cover_url
         replacement = (
             f'<a href="{song_url}"><img src="{html.escape(img_src)}" '
-            f'width="180" alt="{title} 封面"></a><br><br>'
+            f'width="180" alt="{title} cover"></a><br><br>'
             f"🎵 <strong>{title}</strong><br>"
             f"🎼 {safe_artists}<br>"
-            f'<a href="{song_url}">▶ 在网易云播放</a>'
+            f'<a href="{song_url}">▶ Play on NetEase Music</a>'
         )
     else:
         replacement = f"🎵 [**{title}**]({song_url}) · {safe_artists}"
