@@ -21,7 +21,7 @@
 </div>
 
 </td>
-<td width="38%" valign="middle" align="right">
+<td width="38%" valign="bottom" align="right">
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="240" alt="像素乐队现场" />
 </td>
 </tr>
