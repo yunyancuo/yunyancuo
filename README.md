@@ -8,7 +8,7 @@
 <h1>🎸 云烟错</h1>
 
 </div>
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="500" alt="为生活热爱 code！" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg?v=2" width="500" alt="为生活热爱 code！" />
 
 <div align="center">
 
