@@ -2,7 +2,7 @@
 
 <table>
 <tr>
-<td width="62%" valign="middle">
+<td width="62%" valign="bottom">
 <div align="center">
 
 <h1>🎸 云烟错</h1>
