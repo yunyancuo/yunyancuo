@@ -1,14 +1,9 @@
-<div align="center">
-
-# 🎸 云烟错
-
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="600" alt="为生活热爱 code！" />
-
-</div>
-
 ## 🌟 关于我
 
 <table>
+<tr>
+<td colspan="2" align="center"><h1>🎸 云烟错</h1><img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="600" alt="为生活热爱 code！" /></td>
+</tr>
 <tr>
 <td width="58%" valign="middle">
 
