@@ -3,14 +3,22 @@
 <table>
 <tr>
 <td width="62%" valign="middle">
+<div align="center">
+
 <h1>🎸 云烟错</h1>
+
+</div>
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="500" alt="为生活热爱 code！" />
+
+<div align="center">
 
 | 🎈 性格 | 元气、热情、喜欢交朋友 |
 | --- | --- |
 | 🎧 日常 | 写代码 / 听歌 / 研究 AI |
 | 🛠️ 状态 | 把 Bug 变成下一次理解 |
 | 🎯 目标 | 做有用、有趣、值得留下的东西 |
+
+</div>
 
 </td>
 <td width="38%" valign="middle" align="right">
