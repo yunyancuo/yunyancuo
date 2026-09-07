@@ -9,15 +9,13 @@
 
 </div>
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg?v=2" width="500" alt="为生活热爱 code！" />
-
 <div align="center">
-
-| 🎈 性格 | 元气、热情、喜欢交朋友 |
-| --- | --- |
-| 🎧 日常 | 写代码 / 听歌 / 研究 AI |
-| 🛠️ 状态 | 把 Bug 变成下一次理解 |
-| 🎯 目标 | 做有用、有趣、值得留下的东西 |
-
+<table align="center">
+<tr><td>🎈 <strong>性格</strong></td><td>元气、热情、喜欢交朋友</td></tr>
+<tr><td>🎧 <strong>日常</strong></td><td>写代码 / 听歌 / 研究 AI</td></tr>
+<tr><td>🛠️ <strong>状态</strong></td><td>把 Bug 变成下一次理解</td></tr>
+<tr><td>🎯 <strong>目标</strong></td><td>做有用、有趣、值得留下的东西</td></tr>
+</table>
 </div>
 
 </td>
