@@ -10,7 +10,7 @@
 <tr>
 <td width="62%" valign="bottom">
 <div align="center">
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg?v=5" width="500" alt="为生活热爱 code！" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg?v=6" width="500" alt="为生活热爱 code！" />
 <div align="center">
 <table align="center">
 <tr><td>🎈 <strong>性格</strong></td><td>元气、热情、喜欢交朋友</td></tr>
@@ -22,7 +22,7 @@
 
 </td>
 <td width="38%" valign="bottom" align="right">
-<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="240" alt="像素乐队现场" />
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="260" alt="像素乐队现场" />
 </td>
 </tr>
 </table>
