@@ -14,15 +14,33 @@ HEADERS = {
 
 EXCLUDED = {USER}
 
+# 置顶顺序 + 精修文案 + 技术标签（写过的项目不该被 0 星埋没）
+PRIORITY = ["todotree", "velorag", "astrbot_plugin_wuwa_echo", "keresearch", "notes-for-deep-learniung"]
+MAX_CARDS = 6
+
 ICONS = {
+    "todotree": "🖥️",
     "velorag": "🚀",
-    "AstrBot": "✨",
     "astrbot_plugin_wuwa_echo": "🐍",
-    "HDU_AUTO_BOOK-public": "✨",
+    "keresearch": "🧪",
     "notes-for-deep-learniung": "📚",
 }
 
-ROLE_ORDER = {"Creator": 0, "Core": 1, "Contributor": 2, "viewer": 3}
+BLURBS = {
+    "todotree": "Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW），数据就是一份 Markdown",
+    "velorag": "混合检索 + 知识图谱 + Agent 画布的生产级 RAG 框架",
+    "astrbot_plugin_wuwa_echo": "鸣潮声骸自动评分的 AstrBot 插件",
+    "keresearch": "科研全生命周期 Agent Skills：选题 → 实验 → 写作 → 投稿（ZCode / Claude Code 通用）",
+    "notes-for-deep-learniung": "深度学习论文笔记与代码实践",
+}
+
+TAGS = {
+    "todotree": ["Electron", "Markdown", "WorkerW"],
+    "velorag": ["Python", "RAG", "知识图谱"],
+    "astrbot_plugin_wuwa_echo": ["Python", "AstrBot 插件"],
+    "keresearch": ["Agent Skills", "Claude Code"],
+    "notes-for-deep-learniung": ["Jupyter", "深度学习"],
+}
 
 
 def fetch_json(url: str) -> dict | list:
@@ -104,48 +122,77 @@ def get_contribution_info(owner: str, repo: str, is_fork: bool) -> dict:
     return {"commits": commits, "role": role}
 
 
+def render_card(repo: dict) -> str:
+    name = repo["name"]
+    icon = ICONS.get(name, "📦")
+    blurb = BLURBS.get(name) or (repo.get("description") or name)
+    blurb = blurb.replace("|", "\\|").replace("\n", " ")
+    tags = TAGS.get(name) or [repo.get("language") or "Code"]
+    tag_line = " ".join(f"`{t}`" for t in tags)
+    extra = ""
+    if name == "todotree":
+        extra = ' ![release](https://img.shields.io/github/v/release/yunyancuo/todotree?style=flat-square&color=dd4f6b)'
+    return (
+        '<td width="50%" valign="top">\n\n'
+        f"**{icon} [{name}]({repo['html_url']})**{extra}  \n"
+        f"{blurb}  \n"
+        f"{tag_line}\n\n"
+        "</td>"
+    )
+
+
 def main():
     repos = fetch_json(
         f"https://api.github.com/users/{USER}/repos?per_page=50&sort=updated&type=owner"
     )
 
-    rows = []
+    featured, others = [], []
     for repo in repos:
-        name = repo["name"]
-        if name in EXCLUDED or repo.get("private"):
-            continue
+        if repo["name"] in EXCLUDED or repo.get("private") or repo.get("fork"):
+            continue  # fork 与个人主页仓库不上墙
+        (featured if repo["name"] in PRIORITY else others).append(repo)
 
-        icon = ICONS.get(name, "📦")
-        desc = ((repo.get("description") or name)[:80]).replace("|", "\\|")
-        url = repo["html_url"]
-        lang = repo.get("language") or "—"
-        stars = repo.get("stargazers_count", 0)
-        is_fork = repo.get("fork", False)
-        fork_label = "🍴 fork" if is_fork else "📦 source"
+    featured.sort(key=lambda r: PRIORITY.index(r["name"]))
+    others.sort(key=lambda r: r["pushed_at"], reverse=True)
+    selected = (featured + others)[:MAX_CARDS]
 
-        info = get_contribution_info(repo["owner"]["login"], name, is_fork)
-        role = info["role"]
-        commits = info["commits"]
-        commit_str = f"{commits} commits" if commits > 0 else "—"
+    cells = [render_card(repo) for repo in selected]
+    if len(cells) % 2 == 1:
+        cells.append(
+            '<td width="50%" valign="top">\n\n'
+            "**🔎 更多实验与练习**  \n"
+            "爬虫、脚本、踩坑记录都在仓库列表里  \n"
+            f"[全部仓库 →](https://github.com/{USER}?tab=repositories)\n\n"
+            "</td>"
+        )
 
-        row = f"| [{icon} {name}]({url}) | {desc} | {stars} ⭐ | {lang} | {fork_label} | {role} ({commit_str}) |"
-        rows.append(row)
+    rows = ["<table>", "<tr>"]
+    for i, cell in enumerate(cells):
+        rows.append(cell)
+        if i % 2 == 1 and i != len(cells) - 1:
+            rows.append("</tr>")
+            rows.append("<tr>")
+    rows.append("</tr>")
+    rows.append("</table>")
 
-    rows.append(f"\n> 自动更新 · {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
+    stamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    replacement = (
+        "<!-- PROJECTS:START -->\n"
+        + "\n".join(rows)
+        + f"\n\n> 自动更新 · {stamp}\n"
+        + "<!-- PROJECTS:END -->"
+    )
 
-    # Read README
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
     pattern = r"(<!-- PROJECTS:START -->).*?(<!-- PROJECTS:END -->)"
-    replacement = f"<!-- PROJECTS:START -->\n| 项目 | 简介 | Stars | 语言 | 类型 | 我的参与 |\n| --- | --- | --- | --- | --- | --- |\n" + "\n".join(rows) + "\n<!-- PROJECTS:END -->"
-
     content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(content)
 
-    print("Projects table updated.")
+    print("Projects card grid updated.")
 
 
 if __name__ == "__main__":

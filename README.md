@@ -35,18 +35,58 @@
 ## 🎀 我的项目
 
 <!-- PROJECTS:START -->
-| 项目 | 简介 | Stars | 语言 | 类型 | 我的参与 |
-| --- | --- | --- | --- | --- | --- |
-| [📦 keresearch](https://github.com/yunyancuo/keresearch) | keresearch | 0 ⭐ | Shell | 📦 source | Creator (4 commits) |
-| [📦 todotree](https://github.com/yunyancuo/todotree) | 一款基于 Electron 的 Windows 桌面待办工具。读取 Markdown 文件，以半透明暗金窗口锁死在桌面底层，提供四分区（目标/待完成/已完成/放 | 0 ⭐ | JavaScript | 📦 source | Creator (18 commits) |
-| [📦 command-code-reverse](https://github.com/yunyancuo/command-code-reverse) | Converts Command Code API to OpenAI chat completions | 0 ⭐ | — | 🍴 fork | viewer (—) |
-| [✨ AstrBot](https://github.com/yunyancuo/AstrBot) | AI Agent Assistant & development framework that integrates lots of IM platforms, | 0 ⭐ | Python | 🍴 fork | Contributor (2 commits) |
-| [🚀 velorag](https://github.com/yunyancuo/velorag) | 🚀 Production-grade RAG framework — hybrid search + knowledge graph + agent canva | 0 ⭐ | Python | 📦 source | Creator (—) |
-| [🐍 astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo) | 鸣潮声骸评分 AstrBot 插件 | 0 ⭐ | Python | 📦 source | Creator (17 commits) |
-| [✨ HDU_AUTO_BOOK-public](https://github.com/yunyancuo/HDU_AUTO_BOOK-public) | 杭州电子科技大学图书馆预约脚本 \|\| 关联: 杭州电子科技大学  杭电 图书馆 自动 签到 打卡 预约 脚本 | 0 ⭐ | — | 🍴 fork | viewer (—) |
-| [📚 notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung) | notes-for-deep-learniung | 0 ⭐ | Jupyter Notebook | 📦 source | Creator (19 commits) |
+<table>
+<tr>
+<td width="50%" valign="top">
 
-> 自动更新 · 2026-09-03 03:43 UTC
+**🖥️ [todotree](https://github.com/yunyancuo/todotree)** ![release](https://img.shields.io/github/v/release/yunyancuo/todotree?style=flat-square&color=dd4f6b)  
+Windows 桌面待办墙：暗金半透明、真·锁死在桌面底层（WorkerW），数据就是一份 Markdown  
+`Electron` `Markdown` `WorkerW`
+
+</td>
+<td width="50%" valign="top">
+
+**🚀 [velorag](https://github.com/yunyancuo/velorag)**  
+混合检索 + 知识图谱 + Agent 画布的生产级 RAG 框架  
+`Python` `RAG` `知识图谱`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**🐍 [astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo)**  
+鸣潮声骸自动评分的 AstrBot 插件  
+`Python` `AstrBot 插件`
+
+</td>
+<td width="50%" valign="top">
+
+**🧪 [keresearch](https://github.com/yunyancuo/keresearch)**  
+科研全生命周期 Agent Skills：选题 → 实验 → 写作 → 投稿（ZCode / Claude Code 通用）  
+`Agent Skills` `Claude Code`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**📚 [notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung)**  
+深度学习论文笔记与代码实践  
+`Jupyter` `深度学习`
+
+</td>
+<td width="50%" valign="top">
+
+**🔎 更多实验与练习**  
+爬虫、脚本、踩坑记录都在仓库列表里  
+[全部仓库 →](https://github.com/yunyancuo?tab=repositories)
+
+</td>
+</tr>
+</table>
+
+> 自动更新 · 2026-09-07 09:10 UTC
 <!-- PROJECTS:END -->
 
 ---
