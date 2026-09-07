@@ -1,9 +1,14 @@
 ## 🌟 关于我
 
+<div align="center">
+
+# 🎸 云烟错
+
+<img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="600" alt="为生活热爱 code！" />
+
+</div>
+
 <table>
-<tr>
-<td colspan="2" align="center"><h1>🎸 云烟错</h1><img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/profile-title.svg" width="600" alt="为生活热爱 code！" /></td>
-</tr>
 <tr>
 <td width="58%" valign="middle">
 
@@ -14,7 +19,7 @@
 | 🎯 目标 | 做有用、有趣、值得留下的东西 |
 
 </td>
-<td width="42%" valign="middle" align="center">
+<td width="42%" valign="middle" align="right">
 
 <img src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/live-house-pixel.jpg" width="240" alt="像素乐队现场" />
 
