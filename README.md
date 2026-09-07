@@ -117,8 +117,8 @@ Crawlers, scripts and lessons learned — see the full repo list
 
 <div align="center">
 
-<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-stats.svg" alt="GitHub stats" />
-<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/top-languages.svg" alt="Top languages" />
+<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-stats.svg?v=2" alt="GitHub stats" />
+<img height="165" src="https://github.com/yunyancuo/yunyancuo/raw/main/assets/top-languages.svg?v=2" alt="Top languages" />
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github.com/yunyancuo/yunyancuo/raw/main/assets/github-snake-dark.svg?v=2" />

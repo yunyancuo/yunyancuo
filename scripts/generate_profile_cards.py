@@ -28,15 +28,15 @@ def write_stats(user, repos):
     stars = sum(repo["stargazers_count"] for repo in repos)
     content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="165" viewBox="0 0 495 165">
   <rect width="495" height="165" rx="8" fill="#191724"/>
-  <text x="24" y="34" fill="#ebbcba" font-family="sans-serif" font-size="18" font-weight="bold">{svg_escape(USERNAME)} 的 GitHub 状态</text>
-  <text x="24" y="72" fill="#e0def4" font-family="sans-serif" font-size="15">公开仓库</text>
+  <text x="24" y="34" fill="#ebbcba" font-family="sans-serif" font-size="18" font-weight="bold">{svg_escape(USERNAME)}'s GitHub Stats</text>
+  <text x="24" y="72" fill="#e0def4" font-family="sans-serif" font-size="15">Public Repos</text>
   <text x="24" y="98" fill="#ebbcba" font-family="sans-serif" font-size="24" font-weight="bold">{len(repos)}</text>
-  <text x="170" y="72" fill="#e0def4" font-family="sans-serif" font-size="15">关注者</text>
+  <text x="170" y="72" fill="#e0def4" font-family="sans-serif" font-size="15">Followers</text>
   <text x="170" y="98" fill="#ebbcba" font-family="sans-serif" font-size="24" font-weight="bold">{user["followers"]}</text>
-  <text x="316" y="72" fill="#e0def4" font-family="sans-serif" font-size="15">项目总 Star</text>
+  <text x="316" y="72" fill="#e0def4" font-family="sans-serif" font-size="15">Total Stars</text>
   <text x="316" y="98" fill="#ebbcba" font-family="sans-serif" font-size="24" font-weight="bold">{stars}</text>
   <path d="M24 130h447" stroke="#6e6a86" stroke-width="1"/>
-  <text x="24" y="151" fill="#908caa" font-family="sans-serif" font-size="12">数据由 GitHub Actions 自动更新</text>
+  <text x="24" y="151" fill="#908caa" font-family="sans-serif" font-size="12">Auto-updated by GitHub Actions</text>
 </svg>
 '''
     with open(os.path.join(ASSETS, "github-stats.svg"), "w", encoding="utf-8") as file:
@@ -62,10 +62,10 @@ def write_languages(repos):
     legend_text = ''.join(f'<circle cx="{pos + 6}" cy="103" r="6" fill="{color}"/><text x="{pos + 20}" y="108" fill="#e0def4" font-family="sans-serif" font-size="14">{svg_escape(language)}</text>' for language, color, pos in legend)
     content = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="165" viewBox="0 0 495 165">
   <rect width="495" height="165" rx="8" fill="#191724"/>
-  <text x="24" y="34" fill="#ebbcba" font-family="sans-serif" font-size="18" font-weight="bold">常用语言</text>
+  <text x="24" y="34" fill="#ebbcba" font-family="sans-serif" font-size="18" font-weight="bold">Top Languages</text>
   <rect x="24" y="58" width="447" height="16" rx="8" fill="#403d52"/>{''.join(bars)}
   {legend_text}
-  <text x="24" y="144" fill="#908caa" font-family="sans-serif" font-size="12">数据由 GitHub Actions 自动更新</text>
+  <text x="24" y="144" fill="#908caa" font-family="sans-serif" font-size="12">Auto-updated by GitHub Actions</text>
 </svg>
 '''
     with open(os.path.join(ASSETS, "top-languages.svg"), "w", encoding="utf-8") as file:
