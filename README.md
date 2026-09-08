@@ -136,7 +136,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1478568147"><img src="assets/bgm-cover.jpg" width="180" alt="Not Angry cover"></a><br><br>🎵 <strong>Not Angry</strong><br>🎼 Chris James<br><a href="https://music.163.com/#/song?id=1478568147">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=3399839173"><img src="assets/bgm-cover.jpg" width="180" alt="甲乙丙丁 (你我怎么两清) cover"></a><br><br>🎵 <strong>甲乙丙丁 (你我怎么两清)</strong><br>🎼 李佳薇<br><a href="https://music.163.com/#/song?id=3399839173">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
