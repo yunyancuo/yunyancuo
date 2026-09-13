@@ -136,7 +136,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1417481103"><img src="assets/bgm-cover.jpg" width="180" alt="黑怕蒙太奇 cover"></a><br><br>🎵 <strong>黑怕蒙太奇</strong><br>🎼 XMASwu(吴骜)<br><a href="https://music.163.com/#/song?id=1417481103">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2093236174"><img src="assets/bgm-cover.jpg" width="180" alt="梗 概 cover"></a><br><br>🎵 <strong>梗 概</strong><br>🎼 加木<br><a href="https://music.163.com/#/song?id=2093236174">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
