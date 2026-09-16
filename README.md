@@ -161,7 +161,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 
 <div align="center">
 
-*"People with destinations get lost — I'm just here for a stroll through life."*
+*「有目的的人才会迷路，我只是来人间散步。」*
 
 **If you like my projects, a Star ⭐ is much appreciated**
 
