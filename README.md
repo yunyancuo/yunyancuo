@@ -43,6 +43,22 @@ A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the
 </td>
 <td width="50%" valign="top">
 
+**🏆 [astrbot_plugin_zhiren_leaderboard](https://github.com/yunyancuo/astrbot_plugin_zhiren_leaderboard)**  
+Group-chat leaderboard plugin for AstrBot — score tracking, weekly auto-broadcasts and a built-in web ranking page  
+`Python` `AstrBot Plugin` `Web UI`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**🖱️ [MoeCursor](https://github.com/yunyancuo/MoeCursor)**  
+DeepSeek-chan mouse cursor pack for Windows 11 — 17 sticker-style cursors in multi-size .cur files  
+`Windows 11` `Cursor Pack`
+
+</td>
+<td width="50%" valign="top">
+
 **🚀 [velorag](https://github.com/yunyancuo/velorag)**  
 Production-grade RAG framework — hybrid search + knowledge graph + agent canvas  
 `Python` `RAG` `Knowledge Graph`
@@ -83,7 +99,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 </tr>
 </table>
 
-> Auto-updated · 2026-09-07 10:32 UTC
+> Auto-updated · 2026-09-16 16:17 UTC
 <!-- PROJECTS:END -->
 
 ---

@@ -15,11 +15,13 @@ HEADERS = {
 EXCLUDED = {USER}
 
 # 置顶顺序 + 精修文案 + 技术标签（写过的项目不该被 0 星埋没）
-PRIORITY = ["todotree", "velorag", "astrbot_plugin_wuwa_echo", "keresearch", "notes-for-deep-learniung"]
-MAX_CARDS = 6
+PRIORITY = ["todotree", "astrbot_plugin_zhiren_leaderboard", "MoeCursor", "velorag", "astrbot_plugin_wuwa_echo", "keresearch", "notes-for-deep-learniung"]
+MAX_CARDS = 8
 
 ICONS = {
     "todotree": "🖥️",
+    "astrbot_plugin_zhiren_leaderboard": "🏆",
+    "MoeCursor": "🖱️",
     "velorag": "🚀",
     "astrbot_plugin_wuwa_echo": "🐍",
     "keresearch": "🧪",
@@ -27,6 +29,8 @@ ICONS = {
 }
 
 BLURBS = {
+    "astrbot_plugin_zhiren_leaderboard": "Group-chat leaderboard plugin for AstrBot — score tracking, weekly auto-broadcasts and a built-in web ranking page",
+    "MoeCursor": "DeepSeek-chan mouse cursor pack for Windows 11 — 17 sticker-style cursors in multi-size .cur files",
     "todotree": "A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the desktop layer (WorkerW). Data is just one Markdown file",
     "velorag": "Production-grade RAG framework — hybrid search + knowledge graph + agent canvas",
     "astrbot_plugin_wuwa_echo": "Wuthering Waves echo scoring plugin for AstrBot",
@@ -35,6 +39,8 @@ BLURBS = {
 }
 
 TAGS = {
+    "astrbot_plugin_zhiren_leaderboard": ["Python", "AstrBot Plugin", "Web UI"],
+    "MoeCursor": ["Windows 11", "Cursor Pack"],
     "todotree": ["Electron", "Markdown", "WorkerW"],
     "velorag": ["Python", "RAG", "Knowledge Graph"],
     "astrbot_plugin_wuwa_echo": ["Python", "AstrBot Plugin"],
