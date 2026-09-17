@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3426685199"><img src="assets/bgm-cover.jpg" width="180" alt="甲乙丙丁 (粤语版) cover"></a><br><br>🎵 <strong>甲乙丙丁 (粤语版)</strong><br>🎼 李佳薇<br><a href="https://music.163.com/#/song?id=3426685199">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=3435676654"><img src="assets/bgm-cover.jpg" width="180" alt="我的背包 (Live) cover"></a><br><br>🎵 <strong>我的背包 (Live)</strong><br>🎼 Rapeter<br><a href="https://music.163.com/#/song?id=3435676654">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
