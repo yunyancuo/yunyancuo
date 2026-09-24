@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2084366052"><img src="assets/bgm-cover.jpg" width="180" alt="圣山 cover"></a><br><br>🎵 <strong>圣山</strong><br>🎼 LamaMaboo<br><a href="https://music.163.com/#/song?id=2084366052">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2714278530"><img src="assets/bgm-cover.jpg" width="180" alt="Where Did U Go (G.E.M.重生版) cover"></a><br><br>🎵 <strong>Where Did U Go (G.E.M.重生版)</strong><br>🎼 G.E.M.邓紫棋<br><a href="https://music.163.com/#/song?id=2714278530">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
