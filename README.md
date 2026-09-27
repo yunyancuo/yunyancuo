@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=307679"><img src="assets/bgm-cover.jpg" width="180" alt="突然想起你 cover"></a><br><br>🎵 <strong>突然想起你</strong><br>🎼 萧亚轩<br><a href="https://music.163.com/#/song?id=307679">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2050083751"><img src="assets/bgm-cover.jpg" width="180" alt="谈情的价值 cover"></a><br><br>🎵 <strong>谈情的价值</strong><br>🎼 陈慧琳<br><a href="https://music.163.com/#/song?id=2050083751">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
