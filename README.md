@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2612420791"><img src="https://p4.music.126.net/zsEbR2JjjCOGFo4EqOLqeQ==/109951169827043965.jpg" width="180" alt="大雪霜月 cover"></a><br><br>🎵 <strong>大雪霜月</strong><br>🎼 hanji<br><a href="https://music.163.com/#/song?id=2612420791">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2612420791"><img src="assets/bgm-cover.jpg" width="180" alt="大雪霜月 cover"></a><br><br>🎵 <strong>大雪霜月</strong><br>🎼 hanji<br><a href="https://music.163.com/#/song?id=2612420791">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
