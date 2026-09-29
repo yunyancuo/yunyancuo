@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2024913097"><img src="https://p3.music.126.net/6J3Fu03L_Jf22IA3gUfCBA==/109951168530965621.jpg" width="180" alt="Not Too Late cover"></a><br><br>🎵 <strong>Not Too Late</strong><br>🎼 ljz329、SSr<br><a href="https://music.163.com/#/song?id=2024913097">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2024913097"><img src="assets/bgm-cover.jpg" width="180" alt="Not Too Late cover"></a><br><br>🎵 <strong>Not Too Late</strong><br>🎼 ljz329、SSr<br><a href="https://music.163.com/#/song?id=2024913097">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
