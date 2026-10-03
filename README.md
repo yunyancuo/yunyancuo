@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3439378368"><img src="assets/bgm-cover.jpg" width="180" alt="KIKIOUT!:踢! cover"></a><br><br>🎵 <strong>KIKIOUT!:踢!</strong><br>🎼 FiRe范艾迩、黄之仪Kyra Zilver、沧桑Cang333、等一下就回家<br><a href="https://music.163.com/#/song?id=3439378368">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=3347088459"><img src="assets/bgm-cover.jpg" width="180" alt="千万次想象 cover"></a><br><br>🎵 <strong>千万次想象</strong><br>🎼 张杰<br><a href="https://music.163.com/#/song?id=3347088459">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
