@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2610610209"><img src="assets/bgm-cover.jpg" width="180" alt="暗流 cover"></a><br><br>🎵 <strong>暗流</strong><br>🎼 石凯、万妮达Vinida Weng<br><a href="https://music.163.com/#/song?id=2610610209">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=3439378368"><img src="assets/bgm-cover.jpg" width="180" alt="KIKIOUT!:踢! cover"></a><br><br>🎵 <strong>KIKIOUT!:踢!</strong><br>🎼 FiRe范艾迩、黄之仪Kyra Zilver、沧桑Cang333、等一下就回家<br><a href="https://music.163.com/#/song?id=3439378368">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
