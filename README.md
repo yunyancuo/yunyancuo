@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=108640"><img src="assets/bgm-cover.jpg" width="180" alt="阴天 cover"></a><br><br>🎵 <strong>阴天</strong><br>🎼 莫文蔚<br><a href="https://music.163.com/#/song?id=108640">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=247821"><img src="assets/bgm-cover.jpg" width="180" alt="阳光下的星星 cover"></a><br><br>🎵 <strong>阳光下的星星</strong><br>🎼 金海心<br><a href="https://music.163.com/#/song?id=247821">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
