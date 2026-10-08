@@ -152,7 +152,7 @@ Crawlers, scripts and lessons learned — see the full repo list
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=306666"><img src="assets/bgm-cover.jpg" width="180" alt="明知故犯 cover"></a><br><br>🎵 <strong>明知故犯</strong><br>🎼 徐佳莹<br><a href="https://music.163.com/#/song?id=306666">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=1315450595"><img src="assets/bgm-cover.jpg" width="180" alt="The Edge cover"></a><br><br>🎵 <strong>The Edge</strong><br>🎼 Grant、Nevve<br><a href="https://music.163.com/#/song?id=1315450595">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
