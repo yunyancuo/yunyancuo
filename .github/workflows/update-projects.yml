@@ -26,7 +26,7 @@ jobs:
         run: python scripts/generate_projects.py
         env:
           GH_USER: yunyancuo
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push if changed
         run: |
