@@ -91,15 +91,15 @@ Deep learning paper notes with hands-on code
 </td>
 <td width="50%" valign="top">
 
-**🔎 More experiments**  
-Crawlers, scripts and lessons learned — see the full repo list  
-[All repositories →](https://github.com/yunyancuo?tab=repositories)
+**📦 [bci-motor-imagery](https://github.com/yunyancuo/bci-motor-imagery)**  
+bci-motor-imagery  
+`Python`
 
 </td>
 </tr>
 </table>
 
-> Auto-updated · 2026-09-16 16:17 UTC
+> Auto-updated · 2026-10-09 07:02 UTC
 <!-- PROJECTS:END -->
 
 ---
