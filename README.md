@@ -152,7 +152,7 @@ bci-motor-imagery
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1315450595"><img src="assets/bgm-cover.jpg" width="180" alt="The Edge cover"></a><br><br>🎵 <strong>The Edge</strong><br>🎼 Grant、Nevve<br><a href="https://music.163.com/#/song?id=1315450595">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=1315450595"><img src="https://p3.music.126.net/r6P3HhcN9Bhar4QarcDvnQ==/109951163586871232.jpg" width="180" alt="The Edge cover"></a><br><br>🎵 <strong>The Edge</strong><br>🎼 Grant、Nevve<br><a href="https://music.163.com/#/song?id=1315450595">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
