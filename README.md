@@ -152,7 +152,7 @@ bci-motor-imagery
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3436827697"><img src="assets/bgm-cover.jpg" width="180" alt="Fun cover"></a><br><br>🎵 <strong>Fun</strong><br>🎼 Sasha Alex Sloan<br><a href="https://music.163.com/#/song?id=3436827697">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=409646410"><img src="assets/bgm-cover.jpg" width="180" alt="原来你什么都不要 cover"></a><br><br>🎵 <strong>原来你什么都不要</strong><br>🎼 孙燕姿<br><a href="https://music.163.com/#/song?id=409646410">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
