@@ -2,6 +2,8 @@ import json
 import os
 import re
 import html
+import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -23,27 +25,53 @@ def cookie_value(name):
     return ""
 
 
-def request_json(path):
+def request_json(path, retries=3, delay=3):
+    base_path = path
     if API_BASE != "https://music.163.com":
-        separator = "&" if "?" in path else "?"
-        path = f"{path}{separator}cookie={urllib.parse.quote(COOKIE)}"
+        separator = "&" if "?" in base_path else "?"
+        base_path = f"{base_path}{separator}cookie={urllib.parse.quote(COOKIE)}"
     csrf = cookie_value("__csrf")
     if csrf and API_BASE == "https://music.163.com":
-        separator = "&" if "?" in path else "?"
-        path = f"{path}{separator}csrf_token={urllib.parse.quote(csrf)}"
-    request = urllib.request.Request(
-        f"{API_BASE}{path}",
-        headers={
-            "Cookie": COOKIE,
-            "User-Agent": "Mozilla/5.0 GitHub Actions",
-            "Referer": "https://music.163.com/",
-        },
-    )
-    with urllib.request.urlopen(request, timeout=30) as response:
-        result = json.load(response)
-    if result.get("code") != 200:
-        raise RuntimeError(f"网易云接口返回 code={result.get('code')}: {result.get('msg', '未知错误')}")
-    return result
+        separator = "&" if "?" in base_path else "?"
+        base_path = f"{base_path}{separator}csrf_token={urllib.parse.quote(csrf)}"
+
+    last_error = None
+    for attempt in range(1, retries + 1):
+        req_path = base_path
+        if attempt > 1 and API_BASE != "https://music.163.com":
+            sep = "&" if "?" in req_path else "?"
+            req_path = f"{req_path}{sep}timestamp={int(time.time() * 1000)}"
+        request = urllib.request.Request(
+            f"{API_BASE}{req_path}",
+            headers={
+                "Cookie": COOKIE,
+                "User-Agent": "Mozilla/5.0 GitHub Actions",
+                "Referer": "https://music.163.com/",
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                result = json.load(response)
+            if result.get("code") != 200:
+                raise RuntimeError(
+                    f"网易云接口返回 code={result.get('code')}: {result.get('msg') or result.get('message') or '未知错误'}"
+                )
+            return result
+        except urllib.error.HTTPError as err:
+            body = ""
+            try:
+                body = err.read().decode("utf-8", errors="replace")[:300]
+            except Exception:
+                pass
+            last_error = RuntimeError(f"HTTP {err.code} ({path}): {body or err.reason}")
+        except Exception as err:
+            last_error = err
+
+        if attempt < retries:
+            print(f"[retry {attempt}/{retries}] 请求 {path} 失败 ({last_error})，{delay}s 后重试...")
+            time.sleep(delay)
+
+    raise last_error
 
 
 def download_cover(url):
@@ -77,9 +105,14 @@ def main():
         detail = request_json(f"/api/playlist/detail?id={liked['id']}&s=0")
         tracks = (detail.get("playlist") or {}).get("tracks", [])
     else:
-        tracks = request_json(
-            f"/playlist/track/all?id={liked['id']}&limit=1&offset=0"
-        ).get("songs", [])
+        try:
+            tracks = request_json(
+                f"/playlist/track/all?id={liked['id']}&limit=1&offset=0"
+            ).get("songs", [])
+        except Exception as err:
+            print(f"/playlist/track/all 失败 ({err})，回退至 /playlist/detail...")
+            detail = request_json(f"/playlist/detail?id={liked['id']}")
+            tracks = (detail.get("playlist") or {}).get("tracks", [])
     if not tracks:
         raise RuntimeError("“喜欢的音乐”歌单为空，或网易云没有返回歌曲数据。")
 

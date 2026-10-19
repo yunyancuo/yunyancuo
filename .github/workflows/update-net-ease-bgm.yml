@@ -52,6 +52,28 @@ jobs:
           done
           git push origin main
 
+      - name: Close resolved cookie issue
+        if: success()
+        uses: actions/github-script@v9
+        with:
+          script: |
+            const title = "NetEase BGM sync failed"
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner, repo: context.repo.repo,
+              state: "open", labels: "cookie-expired", creator: "github-actions[bot]"
+            })
+            for (const issue of existing.data.filter(i => i.title === title)) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number,
+                body: "BGM sync succeeded — closing this issue automatically."
+              })
+              await github.rest.issues.update({
+                owner: context.repo.owner, repo: context.repo.repo,
+                issue_number: issue.number, state: "closed"
+              })
+            }
+
       - name: Notify cookie expired
         if: failure() && steps.update.outcome == 'failure'
         uses: actions/github-script@v9
