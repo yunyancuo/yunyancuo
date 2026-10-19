@@ -52,20 +52,11 @@ Group-chat leaderboard plugin for AstrBot — score tracking, weekly auto-broadc
 <tr>
 <td width="50%" valign="top">
 
-**🖱️ [MoeCursor](https://github.com/yunyancuo/MoeCursor)**  
-DeepSeek-chan mouse cursor pack for Windows 11 — 17 sticker-style cursors in multi-size .cur files  
-`Windows 11` `Cursor Pack`
-
-</td>
-<td width="50%" valign="top">
-
 **🚀 [velorag](https://github.com/yunyancuo/velorag)**  
 Production-grade RAG framework — hybrid search + knowledge graph + agent canvas  
 `Python` `RAG` `Knowledge Graph`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **🐍 [astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo)**  
@@ -73,6 +64,8 @@ Wuthering Waves echo scoring plugin for AstrBot
 `Python` `AstrBot Plugin`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **🧪 [keresearch](https://github.com/yunyancuo/keresearch)**  
@@ -80,13 +73,20 @@ Research-lifecycle Agent Skills: topic selection → experiments → writing →
 `Agent Skills` `Claude Code`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
 **📚 [notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung)**  
 Deep learning paper notes with hands-on code  
 `Jupyter` `Deep Learning`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**📦 [FeiyuCursor](https://github.com/yunyancuo/FeiyuCursor)**  
+🐋 DeepSeek 大肥鱼 (FeiyuCursor) Windows 11 全套鼠标指针 — 经典奶蓝贴纸、16帧动态呼吸星轨、17项全覆盖 \| 把 DeepSeek 娘做成鼠标指针  
+`Python`
 
 </td>
 <td width="50%" valign="top">
@@ -99,7 +99,7 @@ bci-motor-imagery
 </tr>
 </table>
 
-> Auto-updated · 2026-10-18 03:48 UTC
+> Auto-updated · 2026-10-19 03:57 UTC
 <!-- PROJECTS:END -->
 
 ---
