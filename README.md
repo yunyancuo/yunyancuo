@@ -84,22 +84,22 @@ Deep learning paper notes with hands-on code
 <tr>
 <td width="50%" valign="top">
 
-**📦 [xhs-human-warmer](https://github.com/yunyancuo/xhs-human-warmer)**  
-🐾 小红书同赛道「真人节奏」自动巡航看帖+点赞+收藏养号助手（Playwright 拟人翻图停留 / 防重复误触 / 零评论无打扰）  
+**📦 [FeiyuCursor](https://github.com/yunyancuo/FeiyuCursor)**  
+🐋 DeepSeek 大肥鱼 (FeiyuCursor) Windows 11 全套鼠标指针 — 经典奶蓝贴纸、16帧动态呼吸星轨、17项全覆盖 \| 把 DeepSeek 娘做成鼠标指针  
 `Python`
 
 </td>
 <td width="50%" valign="top">
 
-**📦 [FeiyuCursor](https://github.com/yunyancuo/FeiyuCursor)**  
-🐋 DeepSeek 大肥鱼 (FeiyuCursor) Windows 11 全套鼠标指针 — 经典奶蓝贴纸、16帧动态呼吸星轨、17项全覆盖 \| 把 DeepSeek 娘做成鼠标指针  
+**📦 [xhs-human-warmer](https://github.com/yunyancuo/xhs-human-warmer)**  
+🐾 小红书同赛道「真人节奏」自动巡航看帖+点赞+收藏养号助手（Playwright 拟人翻图停留 / 防重复误触 / 零评论无打扰）  
 `Python`
 
 </td>
 </tr>
 </table>
 
-> Auto-updated · 2026-10-19 07:44 UTC
+> Auto-updated · 2026-10-20 04:10 UTC
 <!-- PROJECTS:END -->
 
 ---
