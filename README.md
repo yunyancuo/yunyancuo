@@ -36,9 +36,9 @@
 <tr>
 <td width="50%" valign="top">
 
-**🖥️ [todotree](https://github.com/yunyancuo/todotree)** ![release](https://img.shields.io/github/v/release/yunyancuo/todotree?style=flat-square&color=dd4f6b)  
+**🖥️ [todotree](https://github.com/Infinite-Monkey-Lab/todotree)** ![release](https://img.shields.io/github/v/release/Infinite-Monkey-Lab/todotree?style=flat-square&color=dd4f6b)  
 A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the desktop layer (WorkerW). Data is just one Markdown file  
-`Electron` `Markdown` `WorkerW`
+`Electron` `Markdown` `WorkerW` `Infinite Monkey Lab`
 
 </td>
 <td width="50%" valign="top">
@@ -52,11 +52,20 @@ Group-chat leaderboard plugin for AstrBot — score tracking, weekly auto-broadc
 <tr>
 <td width="50%" valign="top">
 
+**🐋 [FeiyuCursor](https://github.com/Infinite-Monkey-Lab/FeiyuCursor)**  
+DeepSeek-chan (大肥鱼) animated mouse cursor pack for Windows 11 — 16-frame breathing star-trail & full 17-role coverage  
+`Windows 11` `Cursor Pack` `DeepSeek` `Infinite Monkey Lab`
+
+</td>
+<td width="50%" valign="top">
+
 **🚀 [velorag](https://github.com/yunyancuo/velorag)**  
 Production-grade RAG framework — hybrid search + knowledge graph + agent canvas  
 `Python` `RAG` `Knowledge Graph`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **🐍 [astrbot_plugin_wuwa_echo](https://github.com/yunyancuo/astrbot_plugin_wuwa_echo)**  
@@ -64,15 +73,15 @@ Wuthering Waves echo scoring plugin for AstrBot
 `Python` `AstrBot Plugin`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-**🧪 [keresearch](https://github.com/yunyancuo/keresearch)**  
+**🧪 [keresearch](https://github.com/Infinite-Monkey-Lab/keresearch)**  
 Research-lifecycle Agent Skills: topic selection → experiments → writing → submission (Claude Code & ZCode ready)  
-`Agent Skills` `Claude Code`
+`Agent Skills` `Claude Code` `ZCode` `Infinite Monkey Lab`
 
 </td>
+</tr>
+<tr>
 <td width="50%" valign="top">
 
 **📚 [notes-for-deep-learniung](https://github.com/yunyancuo/notes-for-deep-learniung)**  
@@ -80,26 +89,17 @@ Deep learning paper notes with hands-on code
 `Jupyter` `Deep Learning`
 
 </td>
-</tr>
-<tr>
 <td width="50%" valign="top">
 
-**📦 [FeiyuCursor](https://github.com/yunyancuo/FeiyuCursor)**  
-🐋 DeepSeek 大肥鱼 (FeiyuCursor) Windows 11 全套鼠标指针 — 经典奶蓝贴纸、16帧动态呼吸星轨、17项全覆盖 \| 把 DeepSeek 娘做成鼠标指针  
-`Python`
-
-</td>
-<td width="50%" valign="top">
-
-**📦 [xhs-human-warmer](https://github.com/yunyancuo/xhs-human-warmer)**  
-🐾 小红书同赛道「真人节奏」自动巡航看帖+点赞+收藏养号助手（Playwright 拟人翻图停留 / 防重复误触 / 零评论无打扰）  
+**📦 [bci-motor-imagery](https://github.com/yunyancuo/bci-motor-imagery)**  
+bci-motor-imagery  
 `Python`
 
 </td>
 </tr>
 </table>
 
-> Auto-updated · 2026-10-20 04:10 UTC
+> Auto-updated · 2026-10-20 16:51 UTC
 <!-- PROJECTS:END -->
 
 ---

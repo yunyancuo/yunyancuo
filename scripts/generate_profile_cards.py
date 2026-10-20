@@ -3,18 +3,23 @@ import os
 import urllib.request
 
 USERNAME = "yunyancuo"
+ORGS = ["Infinite-Monkey-Lab"]
+MY_ORG_REPOS = {"todotree", "FeiyuCursor", "keresearch", "infinite-monkey-lab"}
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ASSETS = os.path.join(ROOT, "assets")
 
 
 def get_json(path):
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": USERNAME,
+    }
+    token = os.environ.get("GITHUB_TOKEN", "").strip()
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(
         f"https://api.github.com{path}",
-        headers={
-            "Accept": "application/vnd.github+json",
-            "User-Agent": USERNAME,
-            "Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}",
-        },
+        headers=headers,
     )
     with urllib.request.urlopen(request, timeout=30) as response:
         return json.load(response)
@@ -46,7 +51,8 @@ def write_stats(user, repos):
 def write_languages(repos):
     counts = {}
     for repo in repos:
-        for language, amount in get_json(f'/repos/{USERNAME}/{repo["name"]}/languages').items():
+        full_name = repo.get("full_name", f'{USERNAME}/{repo["name"]}')
+        for language, amount in get_json(f"/repos/{full_name}/languages").items():
             counts[language] = counts.get(language, 0) + amount
     top = sorted(counts.items(), key=lambda item: item[1], reverse=True)[:3]
     total = sum(counts.values()) or 1
@@ -73,6 +79,16 @@ def write_languages(repos):
 
 
 user = get_json(f"/users/{USERNAME}")
-repositories = get_json(f"/users/{USERNAME}/repos?per_page=100&type=owner")
+repositories = list(get_json(f"/users/{USERNAME}/repos?per_page=100&type=owner"))
+seen = {r["name"] for r in repositories}
+for org in ORGS:
+    try:
+        for r in get_json(f"/orgs/{org}/repos?per_page=100&type=public"):
+            if r["name"] not in seen and r["name"] in MY_ORG_REPOS and not r.get("private"):
+                repositories.append(r)
+                seen.add(r["name"])
+    except Exception:
+        pass
+
 write_stats(user, repositories)
 write_languages(repositories)

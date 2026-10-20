@@ -5,6 +5,7 @@ from datetime import datetime, timezone
 
 USER = os.environ["GH_USER"]
 TOKEN = os.environ["GH_TOKEN"]
+ORGS = ["Infinite-Monkey-Lab"]
 
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}",
@@ -12,15 +13,24 @@ HEADERS = {
     "X-GitHub-Api-Version": "2022-11-28",
 }
 
-EXCLUDED = {USER}
+EXCLUDED = {USER, ".github", "demo-repository", "infinite-monkey-lab"}
 
 # 置顶顺序 + 精修文案 + 技术标签（写过的项目不该被 0 星埋没）
-PRIORITY = ["todotree", "astrbot_plugin_zhiren_leaderboard", "MoeCursor", "velorag", "astrbot_plugin_wuwa_echo", "keresearch", "notes-for-deep-learniung"]
+PRIORITY = [
+    "todotree",
+    "astrbot_plugin_zhiren_leaderboard",
+    "FeiyuCursor",
+    "velorag",
+    "astrbot_plugin_wuwa_echo",
+    "keresearch",
+    "notes-for-deep-learniung",
+]
 MAX_CARDS = 8
 
 ICONS = {
     "todotree": "🖥️",
     "astrbot_plugin_zhiren_leaderboard": "🏆",
+    "FeiyuCursor": "🐋",
     "MoeCursor": "🖱️",
     "velorag": "🚀",
     "astrbot_plugin_wuwa_echo": "🐍",
@@ -30,6 +40,7 @@ ICONS = {
 
 BLURBS = {
     "astrbot_plugin_zhiren_leaderboard": "Group-chat leaderboard plugin for AstrBot — score tracking, weekly auto-broadcasts and a built-in web ranking page",
+    "FeiyuCursor": "DeepSeek-chan (大肥鱼) animated mouse cursor pack for Windows 11 — 16-frame breathing star-trail & full 17-role coverage",
     "MoeCursor": "DeepSeek-chan mouse cursor pack for Windows 11 — 17 sticker-style cursors in multi-size .cur files",
     "todotree": "A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the desktop layer (WorkerW). Data is just one Markdown file",
     "velorag": "Production-grade RAG framework — hybrid search + knowledge graph + agent canvas",
@@ -40,11 +51,12 @@ BLURBS = {
 
 TAGS = {
     "astrbot_plugin_zhiren_leaderboard": ["Python", "AstrBot Plugin", "Web UI"],
+    "FeiyuCursor": ["Windows 11", "Cursor Pack", "DeepSeek"],
     "MoeCursor": ["Windows 11", "Cursor Pack"],
     "todotree": ["Electron", "Markdown", "WorkerW"],
     "velorag": ["Python", "RAG", "Knowledge Graph"],
     "astrbot_plugin_wuwa_echo": ["Python", "AstrBot Plugin"],
-    "keresearch": ["Agent Skills", "Claude Code"],
+    "keresearch": ["Agent Skills", "Claude Code", "ZCode"],
     "notes-for-deep-learniung": ["Jupyter", "Deep Learning"],
 }
 
@@ -59,85 +71,20 @@ def fetch_head(url: str) -> httpx.Response:
     return httpx.head(url, headers=HEADERS, timeout=30)
 
 
-def get_contribution_info(owner: str, repo: str, is_fork: bool) -> dict:
-    """
-    Returns dict with 'commits' and 'role'.
-    For forks, checks contributions on the upstream source repo.
-    """
-    # For forks, find the source repo to check real contributions
-    target_owner = owner
-    target_repo = repo
-    if is_fork:
-        try:
-            repo_info = fetch_json(f"https://api.github.com/repos/{owner}/{repo}")
-            source = repo_info.get("source") or repo_info.get("parent")
-            if source:
-                target_owner = source["owner"]["login"]
-                target_repo = source["name"]
-        except Exception:
-            pass
-
-    # Strategy 1: use author-filtered commits to get count
-    commits = 0
-    try:
-        resp = fetch_head(
-            f"https://api.github.com/repos/{target_owner}/{target_repo}/commits?author={USER}&per_page=1"
-        )
-        link = resp.headers.get("link", "")
-        if 'rel="last"' in link:
-            last_page = int(re.search(r'page=(\d+)>; rel="last"', link).group(1))
-            commits = last_page
-        else:
-            commits_page = fetch_json(
-                f"https://api.github.com/repos/{target_owner}/{target_repo}/commits?author={USER}&per_page=1"
-            )
-            commits = 1 if (isinstance(commits_page, list) and len(commits_page) > 0) else 0
-    except Exception:
-        pass
-
-    # Strategy 2: try stats API on target repo
-    try:
-        stats = fetch_json(
-            f"https://api.github.com/repos/{target_owner}/{target_repo}/stats/contributors"
-        )
-        if isinstance(stats, list) and len(stats) > 0:
-            total = sum(a.get("total", 0) for a in stats)
-            user_commits = 0
-            for author in stats:
-                if author.get("author", {}).get("login") == USER:
-                    user_commits = author.get("total", 0)
-            if total > 0:
-                commits = max(commits, user_commits)
-    except Exception:
-        pass
-
-    # Determine role
-    if is_fork:
-        if commits > 10:
-            role = "Core"
-        elif commits > 0:
-            role = "Contributor"
-        else:
-            role = "Contributor" if commits > 0 else "viewer"
-    else:
-        if commits > 0:
-            role = "Creator"
-        else:
-            role = "Creator"
-
-    return {"commits": commits, "role": role}
-
-
 def render_card(repo: dict) -> str:
     name = repo["name"]
+    full_name = repo.get("full_name", f"{USER}/{name}")
+    owner_login = repo.get("owner", {}).get("login", USER)
     icon = ICONS.get(name, "📦")
     blurb = BLURBS.get(name) or (repo.get("description") or name)
     blurb = blurb.replace("|", "\\|").replace("\n", " ")
-    tags = TAGS.get(name) or [repo.get("language") or "Code"]
+    tags = list(TAGS.get(name) or [repo.get("language") or "Code"])
+    if owner_login in ORGS and "Infinite Monkey Lab" not in tags:
+        tags.append("Infinite Monkey Lab")
     tag_line = " ".join(f"`{t}`" for t in tags)
     extra = ""
     if name == "todotree":
-        extra = ' ![release](https://img.shields.io/github/v/release/yunyancuo/todotree?style=flat-square&color=dd4f6b)'
+        extra = f' ![release](https://img.shields.io/github/v/release/{full_name}?style=flat-square&color=dd4f6b)'
     return (
         '<td width="50%" valign="top">\n\n'
         f"**{icon} [{name}]({repo['html_url']})**{extra}  \n"
@@ -148,9 +95,26 @@ def render_card(repo: dict) -> str:
 
 
 def main():
-    repos = fetch_json(
-        f"https://api.github.com/users/{USER}/repos?per_page=50&sort=updated&type=owner"
+    repos = list(
+        fetch_json(
+            f"https://api.github.com/users/{USER}/repos?per_page=50&sort=updated&type=owner"
+        )
     )
+    seen_names = {r["name"] for r in repos}
+
+    for org in ORGS:
+        try:
+            org_repos = fetch_json(
+                f"https://api.github.com/orgs/{org}/repos?per_page=50&sort=updated&type=public"
+            )
+            for r in org_repos:
+                if r["name"] in seen_names or r["name"] in EXCLUDED:
+                    continue
+                if r["name"] in PRIORITY:
+                    repos.append(r)
+                    seen_names.add(r["name"])
+        except Exception as e:
+            print(f"Warning: failed to fetch org {org}: {e}")
 
     featured, others = [], []
     for repo in repos:
