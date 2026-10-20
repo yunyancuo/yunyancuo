@@ -152,7 +152,7 @@ bci-motor-imagery
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=1374061043"><img src="assets/bgm-cover.jpg" width="180" alt="聊表心意 cover"></a><br><br>🎵 <strong>聊表心意</strong><br>🎼 薛之谦、刘惜君<br><a href="https://music.163.com/#/song?id=1374061043">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=3446245797"><img src="assets/bgm-cover.jpg" width="180" alt="It&#x27;s my world cover"></a><br><br>🎵 <strong>It&#x27;s my world</strong><br>🎼 ICE杨长青<br><a href="https://music.163.com/#/song?id=3446245797">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
