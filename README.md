@@ -99,7 +99,7 @@ bci-motor-imagery
 </tr>
 </table>
 
-> Auto-updated · 2026-10-20 16:52 UTC
+> Auto-updated · 2026-10-21 03:58 UTC
 <!-- PROJECTS:END -->
 
 ---
