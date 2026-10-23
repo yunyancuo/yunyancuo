@@ -152,7 +152,7 @@ bci-motor-imagery
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=17110698"><img src="assets/bgm-cover.jpg" width="180" alt="Happy Hour cover"></a><br><br>🎵 <strong>Happy Hour</strong><br>🎼 Cheryl Cole<br><a href="https://music.163.com/#/song?id=17110698">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=526081111"><img src="assets/bgm-cover.jpg" width="180" alt="到此为止 cover"></a><br><br>🎵 <strong>到此为止</strong><br>🎼 徐佳莹<br><a href="https://music.163.com/#/song?id=526081111">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
