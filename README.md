@@ -152,7 +152,7 @@ bci-motor-imagery
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=215382"><img src="assets/bgm-cover.jpg" width="180" alt="雨过后的风景 cover"></a><br><br>🎵 <strong>雨过后的风景</strong><br>🎼 Dizzy Dizzo (蔡诗芸)<br><a href="https://music.163.com/#/song?id=215382">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=307684"><img src="assets/bgm-cover.jpg" width="180" alt="最熟悉的陌生人 cover"></a><br><br>🎵 <strong>最熟悉的陌生人</strong><br>🎼 萧亚轩<br><a href="https://music.163.com/#/song?id=307684">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
