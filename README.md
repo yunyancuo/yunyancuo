@@ -91,15 +91,15 @@ Deep learning paper notes with hands-on code
 </td>
 <td width="50%" valign="top">
 
-**📦 [bci-motor-imagery](https://github.com/yunyancuo/bci-motor-imagery)**  
-bci-motor-imagery  
-`Python`
+**📦 [uu-remote-tls-fix](https://github.com/yunyancuo/uu-remote-tls-fix)**  
+网易UU远程 (GameViewer) 校园网 TLS 握手阻断一键修复工具 · 纯本地双帧 TLS Record 分片直连 · 免安装 Python  
+`PowerShell`
 
 </td>
 </tr>
 </table>
 
-> Auto-updated · 2026-10-26 04:00 UTC
+> Auto-updated · 2026-10-27 04:21 UTC
 <!-- PROJECTS:END -->
 
 ---
