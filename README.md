@@ -91,15 +91,15 @@ Deep learning paper notes with hands-on code
 </td>
 <td width="50%" valign="top">
 
-**📦 [uu-remote-tls-fix](https://github.com/yunyancuo/uu-remote-tls-fix)**  
-网易UU远程 (GameViewer) 校园网 TLS 握手阻断一键修复工具 · 纯本地双帧 TLS Record 分片直连 · 免安装 Python  
-`PowerShell`
+**📦 [multi-agent-study-notes](https://github.com/yunyancuo/multi-agent-study-notes)**  
+多智能体协作（MAS）前沿论文、工业界工程协议（MCP/A2A）与听力学多模态多Agent系统（A0-A9）架构设计学习笔记  
+`Code`
 
 </td>
 </tr>
 </table>
 
-> Auto-updated · 2026-10-27 04:21 UTC
+> Auto-updated · 2026-10-28 04:51 UTC
 <!-- PROJECTS:END -->
 
 ---
