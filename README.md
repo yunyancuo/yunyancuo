@@ -152,7 +152,7 @@ Deep learning paper notes with hands-on code
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=207497"><img src="https://p3.music.126.net/mZLUzr-LZKq4xBFtZEHL6w==/109951166264539977.jpg" width="180" alt="DEAR JOHN cover"></a><br><br>🎵 <strong>DEAR JOHN</strong><br>🎼 比莉<br><a href="https://music.163.com/#/song?id=207497">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=207497"><img src="assets/bgm-cover.jpg" width="180" alt="DEAR JOHN cover"></a><br><br>🎵 <strong>DEAR JOHN</strong><br>🎼 比莉<br><a href="https://music.163.com/#/song?id=207497">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
