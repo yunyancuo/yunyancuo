@@ -91,15 +91,15 @@ Deep learning paper notes with hands-on code
 </td>
 <td width="50%" valign="top">
 
-**📦 [multi-agent-study-notes](https://github.com/yunyancuo/multi-agent-study-notes)**  
-多智能体协作（MAS）前沿论文、工业界工程协议（MCP/A2A）与听力学多模态多Agent系统（A0-A9）架构设计学习笔记  
-`Code`
+**📦 [campus-tls-fix](https://github.com/yunyancuo/campus-tls-fix)**  
+校园网 TLS/SNI 阻断本地修复工具：一键修复网易 UU 远程 (GameViewer) 连接超时与 QQ/微信聊天图片加载缓慢（腾讯 HTTPDNS 阻断），零依赖原生 .NET 实现，支持路由器/手机局域网共享与内网 DNS 动态继承。  
+`PowerShell`
 
 </td>
 </tr>
 </table>
 
-> Auto-updated · 2026-11-04 05:33 UTC
+> Auto-updated · 2026-11-05 05:53 UTC
 <!-- PROJECTS:END -->
 
 ---
