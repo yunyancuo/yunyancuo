@@ -152,7 +152,7 @@ Deep learning paper notes with hands-on code
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2102633593"><img src="assets/bgm-cover.jpg" width="180" alt="索玛白 cover"></a><br><br>🎵 <strong>索玛白</strong><br>🎼 LamaMaboo<br><a href="https://music.163.com/#/song?id=2102633593">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2087550484"><img src="assets/bgm-cover.jpg" width="180" alt="Only In My Mind cover"></a><br><br>🎵 <strong>Only In My Mind</strong><br>🎼 Kenya Grace<br><a href="https://music.163.com/#/song?id=2087550484">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
