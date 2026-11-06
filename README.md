@@ -152,7 +152,7 @@ Deep learning paper notes with hands-on code
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=2080324987"><img src="assets/bgm-cover.jpg" width="180" alt="Love Me cover"></a><br><br>🎵 <strong>Love Me</strong><br>🎼 JMSN<br><a href="https://music.163.com/#/song?id=2080324987">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=2046083965"><img src="assets/bgm-cover.jpg" width="180" alt="Love Me Not cover"></a><br><br>🎵 <strong>Love Me Not</strong><br>🎼 Bao The Whale、Overspace<br><a href="https://music.163.com/#/song?id=2046083965">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
