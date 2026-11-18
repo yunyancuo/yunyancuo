@@ -152,7 +152,7 @@ Deep learning paper notes with hands-on code
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=3460024612"><img src="assets/bgm-cover.jpg" width="180" alt="无中生有《崩坏：星穹铁道》EP cover"></a><br><br>🎵 <strong>无中生有《崩坏：星穹铁道》EP</strong><br>🎼 SL4SH<br><a href="https://music.163.com/#/song?id=3460024612">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=371446"><img src="assets/bgm-cover.jpg" width="180" alt="够爱 cover"></a><br><br>🎵 <strong>够爱</strong><br>🎼 曾沛慈<br><a href="https://music.163.com/#/song?id=371446">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
