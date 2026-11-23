@@ -152,7 +152,7 @@ Deep learning paper notes with hands-on code
 *♪ Music on, ideas flow ♪*
 
 <!-- NETEASE_BGM:START -->
-<a href="https://music.163.com/#/song?id=303365"><img src="assets/bgm-cover.jpg" width="180" alt="爱我不要丢下我 cover"></a><br><br>🎵 <strong>爱我不要丢下我</strong><br>🎼 王思思<br><a href="https://music.163.com/#/song?id=303365">▶ Play on NetEase Music</a>
+<a href="https://music.163.com/#/song?id=1968316652"><img src="assets/bgm-cover.jpg" width="180" alt="Wasted (Nightcore) [Bass Boosted] (feat. harmony haven) cover"></a><br><br>🎵 <strong>Wasted (Nightcore) [Bass Boosted] (feat. harmony haven)</strong><br>🎼 murkish、Huken、harmony haven<br><a href="https://music.163.com/#/song?id=1968316652">▶ Play on NetEase Music</a>
 <!-- NETEASE_BGM:END -->
 
 </div>
