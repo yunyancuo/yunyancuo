@@ -1,0 +1,70 @@
+{
+  "orgs": ["Infinite-Monkey-Lab"],
+  "excluded": ["yunyancuo", ".github", "demo-repository", "infinite-monkey-lab"],
+  "max_cards": 8,
+  "max_blurb_width": 136,
+  "release_badges": ["todotree"],
+  "priority": [
+    "todotree",
+    "astrbot_plugin_zhiren_leaderboard",
+    "FeiyuCursor",
+    "velorag",
+    "astrbot_plugin_wuwa_echo",
+    "keresearch",
+    "notes-for-deep-learniung",
+    "campus-tls-fix",
+    "multi-agent-study-notes"
+  ],
+  "projects": {
+    "todotree": {
+      "icon": "🖥️",
+      "blurb": "A Windows desktop todo wall — dark-gold, semi-transparent, truly pinned to the desktop layer (WorkerW). Data is just one Markdown file",
+      "tags": ["Electron", "Markdown", "WorkerW"]
+    },
+    "astrbot_plugin_zhiren_leaderboard": {
+      "icon": "🏆",
+      "blurb": "Group-chat leaderboard plugin for AstrBot — score tracking, weekly auto-broadcasts and a built-in web ranking page",
+      "tags": ["Python", "AstrBot Plugin", "Web UI"]
+    },
+    "FeiyuCursor": {
+      "icon": "🐋",
+      "blurb": "DeepSeek-chan (大肥鱼) animated mouse cursor pack for Windows 11 — 16-frame breathing star-trail & full 17-role coverage",
+      "tags": ["Windows 11", "Cursor Pack", "DeepSeek"]
+    },
+    "MoeCursor": {
+      "icon": "🖱️",
+      "blurb": "DeepSeek-chan mouse cursor pack for Windows 11 — 17 sticker-style cursors in multi-size .cur files",
+      "tags": ["Windows 11", "Cursor Pack"]
+    },
+    "velorag": {
+      "icon": "🚀",
+      "blurb": "Production-grade RAG framework — hybrid search + knowledge graph + agent canvas",
+      "tags": ["Python", "RAG", "Knowledge Graph"]
+    },
+    "astrbot_plugin_wuwa_echo": {
+      "icon": "🐍",
+      "blurb": "Wuthering Waves echo scoring plugin for AstrBot",
+      "tags": ["Python", "AstrBot Plugin"]
+    },
+    "keresearch": {
+      "icon": "🧪",
+      "blurb": "Research-lifecycle Agent Skills: topic selection → experiments → writing → submission (Claude Code & ZCode ready)",
+      "tags": ["Agent Skills", "Claude Code", "ZCode"]
+    },
+    "notes-for-deep-learniung": {
+      "icon": "📚",
+      "blurb": "Deep learning paper notes with hands-on code",
+      "tags": ["Jupyter", "Deep Learning"]
+    },
+    "campus-tls-fix": {
+      "icon": "🛠️",
+      "blurb": "Zero-dependency Windows .NET utility to fix campus TLS/SNI blocks for UU Remote timeouts and QQ/WeChat image loading",
+      "tags": ["PowerShell", ".NET", "Networking"]
+    },
+    "multi-agent-study-notes": {
+      "icon": "🤖",
+      "blurb": "Structured study notes and hands-on experiments covering multi-agent architectures and LLM collaboration patterns",
+      "tags": ["Multi-Agent", "LLM", "Study Notes"]
+    }
+  }
+}
