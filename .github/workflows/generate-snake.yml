@@ -8,12 +8,16 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-main-write
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: Generate snake SVGs
         uses: Platane/snk/svg-only@v3
         with:
@@ -25,6 +29,16 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/github-snake.svg assets/github-snake-dark.svg
-          git diff --cached --quiet || git commit -m "Update contribution snake"
-          git push
+          git add -- assets/github-snake.svg assets/github-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Update contribution snake"
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin main && exit 0
+            echo "Push attempt ${attempt} failed, retrying..."
+            sleep 3
+          done
+          echo "Failed to push changes after 3 attempts" >&2
+          exit 1

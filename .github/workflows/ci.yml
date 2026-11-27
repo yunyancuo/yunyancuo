@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/**"
+      - "README.md"
+      - "pyproject.toml"
+  pull_request:
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/**"
+      - "README.md"
+      - "pyproject.toml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Install lint and test dependencies
+        run: python -m pip install --upgrade pip ruff pytest pyyaml
+      - name: Run Ruff lint
+        run: ruff check scripts tests
+      - name: Run pytest suite
+        run: pytest -v
