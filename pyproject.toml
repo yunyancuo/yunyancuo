@@ -1,0 +1,28 @@
+[project]
+name = "yunyancuo-profile"
+version = "0.1.0"
+description = "yunyancuo GitHub Profile automation scripts and verification suite"
+requires-python = ">=3.11"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S"]
+ignore = [
+    # 脚本均使用标准库 urllib.request 访问显式构造的 HTTPS / 本地回环 API
+    "S310",
+    # qr_login.py 通过已解析的 npx 可执行文件拉起本地官方封装服务
+    "S603",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*.py" = ["S101", "S105", "S106", "S314"]
+"scripts/_common.py" = ["S101"]
+"scripts/update_netease_bgm.py" = ["S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
