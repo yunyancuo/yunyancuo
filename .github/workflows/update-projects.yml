@@ -10,35 +10,38 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: profile-main-write
+  cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
-
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
-
-      - run: pip install httpx
-
+          python-version: "3.12"
       - name: Generate projects table
         run: python scripts/generate_projects.py
         env:
           GH_USER: yunyancuo
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          if git diff --staged --quiet; then
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- README.md
+          if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
           git commit -m "chore: auto-update projects"
-          for i in 1 2 3; do
-            git pull --rebase --autostash origin main && break || sleep 3
+          for attempt in 1 2 3; do
+            git pull --rebase --autostash origin main && git push origin main && exit 0
+            echo "Push attempt ${attempt} failed, retrying..."
+            sleep 3
           done
-          git push origin main
+          echo "Failed to push changes after 3 attempts" >&2
+          exit 1
