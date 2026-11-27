@@ -99,7 +99,7 @@ Deep learning paper notes with hands-on code
 </tr>
 </table>
 
-> Auto-updated · 2026-11-26 07:36 UTC
+> Auto-updated · 2026-11-27 07:33 UTC
 <!-- PROJECTS:END -->
 
 ---
